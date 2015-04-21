@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Andrew Clissold
 //
 //  Created by Andrew Clissold on 4/20/15.
