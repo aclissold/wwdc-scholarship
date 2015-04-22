@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -15,8 +16,86 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-vW-fGF">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrew Clissold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-QW-Vfx">
+                                        <rect key="frame" x="20" y="86" width="161" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                        <color key="textColor" red="0.66666666666666663" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="0HD-kw-iRD"/>
+                                    <constraint firstAttribute="centerY" secondItem="X9G-QW-Vfx" secondAttribute="centerY" id="HAv-tp-WW2"/>
+                                    <constraint firstAttribute="width" constant="200" id="kjj-Qr-vjv"/>
+                                    <constraint firstAttribute="centerX" secondItem="X9G-QW-Vfx" secondAttribute="centerX" constant="-0.5" id="pgs-vf-X2O"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-TV-cmP">
+                                <rect key="frame" x="272" y="562" width="56" height="30"/>
+                                <state key="normal" title="Projects">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="projectsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wCK-SZ-OC8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-0b-pzU">
+                                <rect key="frame" x="500" y="285" width="84" height="30"/>
+                                <state key="normal" title="Background">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TWT-1L-9NH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-DH-KPk">
+                                <rect key="frame" x="16" y="285" width="59" height="30"/>
+                                <state key="normal" title="Interests">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="interestsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kd0-pS-cH3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XG-jd-UI1">
+                                <rect key="frame" x="282" y="28" width="36" height="30"/>
+                                <state key="normal" title="Skills">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="skillsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g8f-42-f9H"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5XG-jd-UI1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="7m6-Zi-OyT"/>
+                            <constraint firstAttribute="centerY" secondItem="wPm-0b-pzU" secondAttribute="centerY" id="FaG-lh-lRJ"/>
+                            <constraint firstAttribute="centerY" secondItem="mvH-DH-KPk" secondAttribute="centerY" id="FzB-pe-9Jp"/>
+                            <constraint firstAttribute="centerX" secondItem="UD4-TV-cmP" secondAttribute="centerX" id="KyE-HY-f0M"/>
+                            <constraint firstAttribute="centerX" secondItem="2zK-vW-fGF" secondAttribute="centerX" id="U6x-ch-5Zx"/>
+                            <constraint firstAttribute="centerX" secondItem="5XG-jd-UI1" secondAttribute="centerX" id="fNn-21-amA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UD4-TV-cmP" secondAttribute="bottom" constant="8" id="gKV-m4-SEg"/>
+                            <constraint firstItem="wPm-0b-pzU" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="iJN-QX-ekv"/>
+                            <constraint firstItem="mvH-DH-KPk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pPW-cG-cWO"/>
+                            <constraint firstAttribute="centerY" secondItem="2zK-vW-fGF" secondAttribute="centerY" id="x7b-3g-uEN"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundButton" destination="wPm-0b-pzU" id="kgC-fA-Tv9"/>
+                        <outlet property="interestsButton" destination="mvH-DH-KPk" id="Vbl-FK-VNk"/>
+                        <outlet property="projectsButton" destination="UD4-TV-cmP" id="R0y-Oh-i6s"/>
+                        <outlet property="skillsButton" destination="5XG-jd-UI1" id="v3B-nw-FL5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
