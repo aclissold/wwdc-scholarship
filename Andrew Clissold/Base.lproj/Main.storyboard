@@ -5,6 +5,44 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Skills View Controller-->
+        <scene sceneID="hqc-3A-gsA">
+            <objects>
+                <viewController id="Cty-L2-L1C" customClass="SkillsViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6gU-ei-1X8"/>
+                        <viewControllerLayoutGuide type="bottom" id="85B-M4-UPh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKr-kw-b93">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SAL-nC-yDG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbt-7R-u4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="-991"/>
+        </scene>
+        <!--Interests View Controller-->
+        <scene sceneID="JZc-6H-v8z">
+            <objects>
+                <viewController id="b1B-h5-hyg" customClass="InterestsViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="szS-HE-wJ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="ce0-vl-6Di"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5oX-kA-Rmd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7er-6y-yAE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQt-bf-7MO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-844" y="429"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -38,41 +76,41 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-TV-cmP">
                                 <rect key="frame" x="272" y="562" width="56" height="30"/>
                                 <state key="normal" title="Projects">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="projectsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wCK-SZ-OC8"/>
+                                    <segue destination="DqS-4D-3gI" kind="show" identifier="showProjects" id="5vL-jo-mOk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-0b-pzU">
                                 <rect key="frame" x="500" y="285" width="84" height="30"/>
                                 <state key="normal" title="Background">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="backgroundButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TWT-1L-9NH"/>
+                                    <segue destination="y41-hW-NMj" kind="show" identifier="showBackground" id="Z21-vv-wWF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-DH-KPk">
                                 <rect key="frame" x="16" y="285" width="59" height="30"/>
                                 <state key="normal" title="Interests">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="interestsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kd0-pS-cH3"/>
+                                    <segue destination="gWo-vH-6ek" kind="show" identifier="showInterests" id="pDg-jN-xjJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XG-jd-UI1">
                                 <rect key="frame" x="282" y="28" width="36" height="30"/>
                                 <state key="normal" title="Skills">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="skillsButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g8f-42-f9H"/>
+                                    <segue destination="12y-7T-vpt" kind="show" identifier="showSkills" id="LTE-Zw-n8w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -99,6 +137,117 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="580" y="429"/>
+        </scene>
+        <!--Projects View Controller-->
+        <scene sceneID="olS-qz-qkH">
+            <objects>
+                <viewController id="v5d-EH-9fl" customClass="ProjectsViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LrB-cU-fU4"/>
+                        <viewControllerLayoutGuide type="bottom" id="w7v-wp-kfP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gJR-8e-wtt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dMp-fc-jWd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lj0-HQ-2yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="1863"/>
+        </scene>
+        <!--Background View Controller-->
+        <scene sceneID="UUC-XW-9O8">
+            <objects>
+                <viewController id="dtB-1B-06C" customClass="BackgroundViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vBr-LD-fqp"/>
+                        <viewControllerLayoutGuide type="bottom" id="IGZ-sf-eph"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YMl-L3-2V9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8FE-Zk-5tf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Sv-8r-huu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1981" y="429"/>
+        </scene>
+        <!--Portrait Navigation Controller-->
+        <scene sceneID="wgW-JO-UA1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DqS-4D-3gI" customClass="PortraitNavigationController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lhs-aR-mOD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v5d-EH-9fl" kind="relationship" relationship="rootViewController" id="7FJ-SL-Zko"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJa-Ch-YEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="1135"/>
+        </scene>
+        <!--Landscape Left Navigation Controller-->
+        <scene sceneID="9Nr-Cl-6HL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y41-hW-NMj" customClass="LandscapeLeftNavigationController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eSw-4t-yco">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dtB-1B-06C" kind="relationship" relationship="rootViewController" id="MXc-Ut-xlI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j1C-5C-rqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1285" y="429"/>
+        </scene>
+        <!--Portrait Upside Down Navigation Controller-->
+        <scene sceneID="UfD-i6-zqb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="12y-7T-vpt" customClass="PortraitUpsideDownNavigationController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ovI-LD-zFJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cty-L2-L1C" kind="relationship" relationship="rootViewController" id="bR3-DQ-dSW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqi-wb-1pI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="580" y="-295"/>
+        </scene>
+        <!--Landscape Right Navigation Controller-->
+        <scene sceneID="hTb-s3-lqC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gWo-vH-6ek" customClass="LandscapeRightNavigationController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MM8-m8-Yel">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="b1B-h5-hyg" kind="relationship" relationship="rootViewController" id="nEU-td-r4e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-LB-4Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="429"/>
         </scene>
     </scenes>
 </document>

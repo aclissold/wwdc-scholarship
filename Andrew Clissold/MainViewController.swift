@@ -48,20 +48,4 @@ class MainViewController: UIViewController {
         return .Portrait
     }
 
-    @IBAction func projectsButtonTapped(sender: UIButton) {
-
-    }
-
-    @IBAction func interestsButtonTapped(sender: UIButton) {
-
-    }
-
-    @IBAction func skillsButtonTapped(sender: UIButton) {
-
-    }
-
-    @IBAction func backgroundButtonTapped(sender: UIButton) {
-
-    }
-
 }
