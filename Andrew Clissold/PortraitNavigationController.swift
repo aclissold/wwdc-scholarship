@@ -10,10 +10,6 @@ import UIKit
 
 class PortraitNavigationController: UINavigationController {
 
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
-
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.Portrait.rawValue)
     }

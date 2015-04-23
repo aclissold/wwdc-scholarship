@@ -14,4 +14,8 @@ class BackgroundViewController: UIViewController {
         title = "Background"
     }
 
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+
 }

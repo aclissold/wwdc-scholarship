@@ -13,5 +13,9 @@ class ProjectsViewController: UIViewController {
     override func viewDidLoad() {
         title = "Projects"
     }
+
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
     
 }

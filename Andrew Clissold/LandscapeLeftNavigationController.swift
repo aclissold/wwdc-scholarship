@@ -10,10 +10,6 @@ import UIKit
 
 class LandscapeLeftNavigationController: UINavigationController {
 
-    override func prefersStatusBarHidden() -> Bool {
-        return true
-    }
-
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.LandscapeLeft.rawValue)
     }
