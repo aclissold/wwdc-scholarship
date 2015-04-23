@@ -18,9 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SAL-nC-yDG"/>
+                    <navigationItem key="navigationItem" id="SAL-nC-yDG">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="c2I-nf-jDc">
+                            <connections>
+                                <segue destination="2jF-nm-Jj2" kind="unwind" unwindAction="unwindToMainViewController:" id="VqU-6a-gg3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbt-7R-u4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="2jF-nm-Jj2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="580" y="-991"/>
         </scene>
@@ -37,9 +44,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7er-6y-yAE"/>
+                    <navigationItem key="navigationItem" id="7er-6y-yAE">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="G8S-2a-e76">
+                            <connections>
+                                <segue destination="E3T-Hg-E6q" kind="unwind" unwindAction="unwindToMainViewController:" id="vHc-7Z-JCc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQt-bf-7MO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="E3T-Hg-E6q" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-844" y="429"/>
         </scene>
@@ -156,9 +170,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dMp-fc-jWd"/>
+                    <navigationItem key="navigationItem" id="dMp-fc-jWd">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="C2q-Yz-IOa">
+                            <connections>
+                                <segue destination="PCA-ll-r2X" kind="unwind" unwindAction="unwindToMainViewController:" id="8TW-ux-NhQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lj0-HQ-2yI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PCA-ll-r2X" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="580" y="1863"/>
         </scene>
@@ -175,9 +196,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8FE-Zk-5tf"/>
+                    <navigationItem key="navigationItem" id="8FE-Zk-5tf">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="HwH-Mb-XEF">
+                            <connections>
+                                <segue destination="AAO-sJ-h2S" kind="unwind" unwindAction="unwindToMainViewController:" id="f3h-UT-0fq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Sv-8r-huu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="AAO-sJ-h2S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1981" y="429"/>
         </scene>
