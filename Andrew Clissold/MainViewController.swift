@@ -15,6 +15,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var skillsButton: UIButton!
     @IBOutlet weak var backgroundButton: UIButton!
 
+    @IBOutlet weak var backdropView: UIView!
+
+    @IBOutlet weak var contactInfoContainerView: UIView!
     @IBOutlet weak var githubButton: UIButton!
     @IBOutlet weak var andrewClissoldButton: UIButton!
     @IBOutlet weak var emailButton: UIButton!
@@ -24,6 +27,7 @@ class MainViewController: UIViewController {
 
     override func viewDidLayoutSubviews() {
         rotateFrames()
+        contactInfoContainerView.layer.cornerRadius = contactInfoContainerView.frame.size.width/2
     }
 
     func rotateFrames() {
@@ -77,25 +81,16 @@ class MainViewController: UIViewController {
     }
 
     func toggleContactInfo() {
-        if isContactInfoShowing {
-            hideContactInfo()
-        } else {
-            showContactInfo()
-        }
         isContactInfoShowing = !isContactInfoShowing
-    }
 
-    func hideContactInfo() {
         UIView.animateWithDuration(animationDuration) {
-            self.githubButton.alpha = 0
-            self.emailButton.alpha = 0
-        }
-    }
+            self.githubButton.alpha = self.isContactInfoShowing ? 1 : 0
+            self.emailButton.alpha = self.isContactInfoShowing ? 1 : 0
+            self.backdropView.alpha = self.isContactInfoShowing ? 0.8 : 0
 
-    func showContactInfo() {
-        UIView.animateWithDuration(animationDuration) {
-            self.githubButton.alpha = 1
-            self.emailButton.alpha = 1
+            for button in [self.projectsButton, self.interestsButton, self.skillsButton, self.backgroundButton] {
+                button.userInteractionEnabled = !self.isContactInfoShowing
+            }
         }
     }
 
