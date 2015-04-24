@@ -15,6 +15,13 @@ class MainViewController: UIViewController {
     @IBOutlet weak var skillsButton: UIButton!
     @IBOutlet weak var backgroundButton: UIButton!
 
+    @IBOutlet weak var githubButton: UIButton!
+    @IBOutlet weak var andrewClissoldButton: UIButton!
+    @IBOutlet weak var emailButton: UIButton!
+
+    var isContactInfoShowing = false
+    let animationDuration: NSTimeInterval = 0.4
+
     override func viewDidLayoutSubviews() {
         rotateFrames()
     }
@@ -50,6 +57,46 @@ class MainViewController: UIViewController {
 
     @IBAction func unwindToMainViewController(segue: UIStoryboardSegue) {
 
+    }
+
+    // MARK: Contact Info
+
+    @IBAction func contactInfoButtonTapped(sender: UIButton) {
+        switch (sender) {
+        case andrewClissoldButton:
+            toggleContactInfo()
+        case githubButton:
+            let URL = NSURL(string: "https://github.com/aclissold")!
+            UIApplication.sharedApplication().openURL(URL)
+        case emailButton:
+            let URL = NSURL(string: "mailto:andrewclissold@gmail.com")!
+            UIApplication.sharedApplication().openURL(URL)
+        default:
+            fatalError("unexpected contact info button tapped")
+        }
+    }
+
+    func toggleContactInfo() {
+        if isContactInfoShowing {
+            hideContactInfo()
+        } else {
+            showContactInfo()
+        }
+        isContactInfoShowing = !isContactInfoShowing
+    }
+
+    func hideContactInfo() {
+        UIView.animateWithDuration(animationDuration) {
+            self.githubButton.alpha = 0
+            self.emailButton.alpha = 0
+        }
+    }
+
+    func showContactInfo() {
+        UIView.animateWithDuration(animationDuration) {
+            self.githubButton.alpha = 1
+            self.emailButton.alpha = 1
+        }
     }
 
 }

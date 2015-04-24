@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -72,19 +72,50 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-vW-fGF">
                                 <rect key="frame" x="200" y="200" width="200" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andrew Clissold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-QW-Vfx">
-                                        <rect key="frame" x="20" y="86" width="161" height="29"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-DE-O2S">
+                                        <rect key="frame" x="20" y="79" width="161" height="41"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
-                                        <color key="textColor" red="0.66666666666666663" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <state key="normal" title="Andrew Clissold">
+                                            <color key="titleColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactInfoButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NxZ-pa-URT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4T-Vq-1cL">
+                                        <rect key="frame" x="16" y="138" width="169" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <state key="normal" title="andrewclissold@gmail.com">
+                                            <color key="titleColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactInfoButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gyq-UB-qLn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dix-gr-d1r">
+                                        <rect key="frame" x="36" y="31" width="129" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                        <state key="normal" title="github.com/aclissold">
+                                            <color key="titleColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="contactInfoButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Wpj-ic-x39"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="0HD-kw-iRD"/>
-                                    <constraint firstAttribute="centerY" secondItem="X9G-QW-Vfx" secondAttribute="centerY" id="HAv-tp-WW2"/>
+                                    <constraint firstAttribute="centerY" secondItem="d1T-DE-O2S" secondAttribute="centerY" constant="0.5" id="1Fv-e3-990"/>
+                                    <constraint firstAttribute="centerX" secondItem="d1T-DE-O2S" secondAttribute="centerX" id="9a6-VP-eZa"/>
+                                    <constraint firstItem="d1T-DE-O2S" firstAttribute="top" secondItem="dix-gr-d1r" secondAttribute="bottom" constant="18" id="D8N-fT-t6D"/>
+                                    <constraint firstItem="L4T-Vq-1cL" firstAttribute="centerX" secondItem="d1T-DE-O2S" secondAttribute="centerX" constant="-0.5" id="Nun-BM-DYx"/>
+                                    <constraint firstItem="L4T-Vq-1cL" firstAttribute="top" secondItem="d1T-DE-O2S" secondAttribute="bottom" constant="18" id="Yv2-ld-gvl"/>
+                                    <constraint firstItem="d1T-DE-O2S" firstAttribute="centerX" secondItem="dix-gr-d1r" secondAttribute="centerX" id="dMB-r1-yDH"/>
                                     <constraint firstAttribute="width" constant="200" id="kjj-Qr-vjv"/>
-                                    <constraint firstAttribute="centerX" secondItem="X9G-QW-Vfx" secondAttribute="centerX" constant="-0.5" id="pgs-vf-X2O"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-TV-cmP">
@@ -147,7 +178,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="andrewClissoldButton" destination="d1T-DE-O2S" id="c23-Jn-VY7"/>
                         <outlet property="backgroundButton" destination="wPm-0b-pzU" id="kgC-fA-Tv9"/>
+                        <outlet property="emailButton" destination="L4T-Vq-1cL" id="S4c-ef-AOu"/>
+                        <outlet property="githubButton" destination="dix-gr-d1r" id="u7g-wd-xpw"/>
                         <outlet property="interestsButton" destination="mvH-DH-KPk" id="Vbl-FK-VNk"/>
                         <outlet property="projectsButton" destination="UD4-TV-cmP" id="R0y-Oh-i6s"/>
                         <outlet property="skillsButton" destination="5XG-jd-UI1" id="v3B-nw-FL5"/>
