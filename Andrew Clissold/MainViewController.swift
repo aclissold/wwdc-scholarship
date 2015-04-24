@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreMotion
 
 class MainViewController: UIViewController {
 
@@ -24,6 +25,33 @@ class MainViewController: UIViewController {
 
     var isContactInfoShowing = false
     let animationDuration: NSTimeInterval = 0.4
+
+    let motionManager = CMMotionManager()
+
+    override func viewDidLoad() {
+        motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data, error) in
+            var angleX = data.acceleration.x * M_PI_2
+            var angleY = data.acceleration.y * M_PI_2
+            var angleZ = data.acceleration.y * M_PI_2
+            let x = data.acceleration.x > 0
+            let y = data.acceleration.y > 0
+
+            let angle: Double
+            if x && y {
+                angle = angleX - M_PI
+            } else if x && !y {
+                angle = angleX * -1
+            } else if !x && !y {
+                angle = angleX * -1
+            } else {
+                angle = angleX - M_PI
+            }
+
+            var rotationTransform = CGAffineTransformIdentity
+            rotationTransform = CGAffineTransformRotate(rotationTransform, CGFloat(angle))
+            self.contactInfoContainerView.layer.transform = CATransform3DMakeAffineTransform(rotationTransform)
+        }
+    }
 
     override func viewDidLayoutSubviews() {
         rotateFrames()
