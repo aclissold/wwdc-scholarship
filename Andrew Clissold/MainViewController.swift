@@ -29,6 +29,7 @@ class MainViewController: UIViewController {
 
     var isContactInfoShowing = false
     var didCheckForSimulator = false
+    var didUpdateContactInfoContainerViewCornerRadius = false
 
     override func viewDidLoad() {
         startDeviceMotionUpdates()
@@ -45,7 +46,10 @@ class MainViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         rotateFrames()
-        contactInfoContainerView.layer.cornerRadius = contactInfoContainerView.frame.size.width/2
+        if !didUpdateContactInfoContainerViewCornerRadius {
+            contactInfoContainerView.layer.cornerRadius = contactInfoContainerView.frame.size.width/2
+            didUpdateContactInfoContainerViewCornerRadius = true
+        }
     }
 
     func startDeviceMotionUpdates() {
