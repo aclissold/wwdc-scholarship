@@ -21,6 +21,7 @@
 		B59833C91AE72A1900809D03 /* PortraitUpsideDownNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59833C81AE72A1900809D03 /* PortraitUpsideDownNavigationController.swift */; };
 		B59833CC1AE72B4E00809D03 /* PortraitNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59833CB1AE72B4E00809D03 /* PortraitNavigationController.swift */; };
 		B59EDEFB1AEC1D7400601D43 /* ProjectsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDEFA1AEC1D7400601D43 /* ProjectsDataSource.swift */; };
+		B5C0F8D91AEC40B400A8E680 /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0F8D81AEC40B400A8E680 /* LinkViewController.swift */; };
 		B5E0BBC61AE9D59E00218693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		B59833C81AE72A1900809D03 /* PortraitUpsideDownNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitUpsideDownNavigationController.swift; sourceTree = "<group>"; };
 		B59833CB1AE72B4E00809D03 /* PortraitNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitNavigationController.swift; sourceTree = "<group>"; };
 		B59EDEFA1AEC1D7400601D43 /* ProjectsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsDataSource.swift; sourceTree = "<group>"; };
+		B5C0F8D81AEC40B400A8E680 /* LinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
 		B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -78,8 +80,7 @@
 			children = (
 				B549E8981AE5C2E400946B5F /* AppDelegate.swift */,
 				B549E89A1AE5C2E400946B5F /* MainViewController.swift */,
-				B59833C21AE7279200809D03 /* ProjectsViewController.swift */,
-				B59EDEFA1AEC1D7400601D43 /* ProjectsDataSource.swift */,
+				B5C0F8D11AEC3F1100A8E680 /* Projects */,
 				B59833C01AE7278800809D03 /* InterestsViewController.swift */,
 				B59833BE1AE7278100809D03 /* SkillsViewController.swift */,
 				B59833BC1AE7277900809D03 /* BackgroundViewController.swift */,
@@ -109,6 +110,16 @@
 				B59833C41AE7295800809D03 /* LandscapeRightNavigation.swift */,
 			);
 			name = "Orientation Navigation Controllers";
+			sourceTree = "<group>";
+		};
+		B5C0F8D11AEC3F1100A8E680 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				B59833C21AE7279200809D03 /* ProjectsViewController.swift */,
+				B59EDEFA1AEC1D7400601D43 /* ProjectsDataSource.swift */,
+				B5C0F8D81AEC40B400A8E680 /* LinkViewController.swift */,
+			);
+			name = Projects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				B59833BF1AE7278100809D03 /* SkillsViewController.swift in Sources */,
 				B59833C71AE729D900809D03 /* LandscapeLeftNavigationController.swift in Sources */,
 				B549E8991AE5C2E400946B5F /* AppDelegate.swift in Sources */,
+				B5C0F8D91AEC40B400A8E680 /* LinkViewController.swift in Sources */,
 				B59EDEFB1AEC1D7400601D43 /* ProjectsDataSource.swift in Sources */,
 				B59833C51AE7295800809D03 /* LandscapeRightNavigation.swift in Sources */,
 				B59833C11AE7278800809D03 /* InterestsViewController.swift in Sources */,

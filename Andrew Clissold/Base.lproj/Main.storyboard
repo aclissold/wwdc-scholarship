@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DqS-4D-3gI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -197,10 +197,10 @@
             </objects>
             <point key="canvasLocation" x="580" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Link View Controller-->
         <scene sceneID="ZYM-YR-1cq">
             <objects>
-                <viewController storyboardIdentifier="SpamViewController" id="04s-Ov-jfm" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SpamViewController" id="04s-Ov-jfm" customClass="LinkViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="30h-T8-SGa"/>
                         <viewControllerLayoutGuide type="bottom" id="2Po-Zk-FDO"/>
@@ -209,17 +209,196 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="spam" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0E2-jo-gS4">
-                                <rect key="frame" x="279" y="289" width="43" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spam Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GNI-fT-sOU">
+                                <rect key="frame" x="125" y="20" width="350" height="145"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cou-wL-pWH">
+                                <rect key="frame" x="16" y="173" width="568" height="383"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">spam is an exploratory Swift package manager, enabling the use of third-party Swift modules outside the context of an iOS or OS X app! And it's dead simple to use:
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="import">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.58039215686274515" green="0.023529411764705882" blue="0.29411764705882354" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.66274509800000003" green="0.047058823530000002" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.58039215686274515" green="0.023529411764705882" blue="0.29411764705882354" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.58039215686274515" green="0.023529411764705882" blue="0.29411764705882354" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Module">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.58039215686274515" green="0.023529411764705882" blue="0.29411764705882354" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.054901960784313725" green="0.44705882352941179" blue="0.64313725490196083" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.58039215686274515" green="0.023529411764705882" blue="0.29411764705882354" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="// username/Module">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="0.58039215686274515" green="0.023529411764705882" blue="0.29411764705882354" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="0.039215686270000001" green="0.31764705879999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Menlo-Italic"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="Menlo-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.51764705882352946" green="0.52549019607843139" blue="0.51764705882352946" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+…is all spam needs in order to know where the module lives, how to compile it, and how to integrate it with your own code. Then, simply run </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="spam --install">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" to clone the module(s) from GitHub and ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="spam --compile">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="14" name="Menlo-Regular"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="14" name="Menlo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" to build the project!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-Xh-R05">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TLm-Qn-9uS"/>
+                                    <barButtonItem title="View on GitHub" id="jin-gH-mwn">
+                                        <connections>
+                                            <action selector="linkButtonPressed:" destination="04s-Ov-jfm" id="fmV-D7-czn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="R0w-tg-TFk"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="0E2-jo-gS4" secondAttribute="centerY" id="SHK-OK-5dv"/>
-                            <constraint firstAttribute="centerX" secondItem="0E2-jo-gS4" secondAttribute="centerX" id="upw-zq-baT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RTF-Xh-R05" secondAttribute="trailing" constant="-16" id="2vJ-MZ-JQG"/>
+                            <constraint firstItem="GNI-fT-sOU" firstAttribute="top" secondItem="30h-T8-SGa" secondAttribute="bottom" id="H2A-j4-QtL"/>
+                            <constraint firstItem="2Po-Zk-FDO" firstAttribute="top" secondItem="cou-wL-pWH" secondAttribute="bottom" constant="44" id="RBV-qu-XBZ"/>
+                            <constraint firstItem="cou-wL-pWH" firstAttribute="leading" secondItem="kdJ-v6-E1m" secondAttribute="leadingMargin" id="YmR-nl-ezG"/>
+                            <constraint firstItem="cou-wL-pWH" firstAttribute="top" secondItem="GNI-fT-sOU" secondAttribute="bottom" constant="8" id="blO-94-bnN"/>
+                            <constraint firstItem="RTF-Xh-R05" firstAttribute="leading" secondItem="kdJ-v6-E1m" secondAttribute="leadingMargin" constant="-16" id="kdR-vs-AMX"/>
+                            <constraint firstAttribute="centerX" secondItem="GNI-fT-sOU" secondAttribute="centerX" id="qKg-wj-siz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cou-wL-pWH" secondAttribute="trailing" id="yLa-Wx-zNv"/>
+                            <constraint firstItem="2Po-Zk-FDO" firstAttribute="top" secondItem="RTF-Xh-R05" secondAttribute="bottom" id="yvg-ov-y0O"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -227,10 +406,10 @@
             </objects>
             <point key="canvasLocation" x="-122" y="3307"/>
         </scene>
-        <!--View Controller-->
+        <!--Link View Controller-->
         <scene sceneID="JSj-pm-hjD">
             <objects>
-                <viewController storyboardIdentifier="OaklandPostViewController" id="4Fo-2U-f9Z" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OaklandPostViewController" id="4Fo-2U-f9Z" customClass="LinkViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nnA-BA-lxo"/>
                         <viewControllerLayoutGuide type="bottom" id="c46-9t-RGj"/>
@@ -257,10 +436,10 @@
             </objects>
             <point key="canvasLocation" x="580" y="3307"/>
         </scene>
-        <!--View Controller-->
+        <!--Link View Controller-->
         <scene sceneID="QuG-vF-FGx">
             <objects>
-                <viewController storyboardIdentifier="TypeOneTwoViewController" id="iDt-Rr-WeT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TypeOneTwoViewController" id="iDt-Rr-WeT" customClass="LinkViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Iwv-ys-Soc"/>
                         <viewControllerLayoutGuide type="bottom" id="jkt-L3-nJe"/>
@@ -420,4 +599,7 @@
             <point key="canvasLocation" x="-122" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Spam Logo" width="350" height="145"/>
+    </resources>
 </document>
