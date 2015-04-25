@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func theme() {
-        let redColor = UIColor(red: 0xaa/0xff, green: 0, blue: 0, alpha: 1)
+        let redColor = UIColor(red: 0xAA/0xFF, green: 0, blue: 0, alpha: 1)
         let lightGrayColor = UIColor(white: 0.85, alpha: 1)
-        let toolbarBackgroundColor = UIColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1)
+        let toolbarBackgroundColor = UIColor(red: 0xF5/0xFF, green: 0xF5/0xFF, blue: 0xF5/0xFF, alpha: 0.67)
 
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = redColor

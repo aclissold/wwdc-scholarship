@@ -213,7 +213,7 @@
                                 <rect key="frame" x="125" y="20" width="350" height="145"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cou-wL-pWH">
-                                <rect key="frame" x="16" y="173" width="568" height="383"/>
+                                <rect key="frame" x="16" y="173" width="568" height="382"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -392,9 +392,9 @@ Cg
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="RTF-Xh-R05" secondAttribute="trailing" constant="-16" id="2vJ-MZ-JQG"/>
                             <constraint firstItem="GNI-fT-sOU" firstAttribute="top" secondItem="30h-T8-SGa" secondAttribute="bottom" id="H2A-j4-QtL"/>
-                            <constraint firstItem="2Po-Zk-FDO" firstAttribute="top" secondItem="cou-wL-pWH" secondAttribute="bottom" constant="44" id="RBV-qu-XBZ"/>
                             <constraint firstItem="cou-wL-pWH" firstAttribute="leading" secondItem="kdJ-v6-E1m" secondAttribute="leadingMargin" id="YmR-nl-ezG"/>
                             <constraint firstItem="cou-wL-pWH" firstAttribute="top" secondItem="GNI-fT-sOU" secondAttribute="bottom" constant="8" id="blO-94-bnN"/>
+                            <constraint firstItem="RTF-Xh-R05" firstAttribute="top" secondItem="cou-wL-pWH" secondAttribute="bottom" constant="1" id="cbF-HX-HR8"/>
                             <constraint firstItem="RTF-Xh-R05" firstAttribute="leading" secondItem="kdJ-v6-E1m" secondAttribute="leadingMargin" constant="-16" id="kdR-vs-AMX"/>
                             <constraint firstAttribute="centerX" secondItem="GNI-fT-sOU" secondAttribute="centerX" id="qKg-wj-siz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cou-wL-pWH" secondAttribute="trailing" id="yLa-Wx-zNv"/>
@@ -418,17 +418,61 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Oakland Post" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLP-KV-CRE">
-                                <rect key="frame" x="232" y="289" width="137" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YB1-HG-cGx">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xBn-nx-ZY6"/>
+                                    <barButtonItem tag="1" title="View in App Store" id="zA9-5t-jrX">
+                                        <connections>
+                                            <action selector="linkButtonPressed:" destination="4Fo-2U-f9Z" id="iwc-c7-dWK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="16c-z7-Rnu"/>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoc-zD-jGB">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Oakland Post" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ig1-xp-GtZ">
+                                        <rect key="frame" x="232" y="10" width="137" height="24"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45098039220000002" green="0.58039215690000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="F7k-Ht-FJV"/>
+                                    <constraint firstAttribute="centerX" secondItem="Ig1-xp-GtZ" secondAttribute="centerX" id="V0B-Hb-WZI"/>
+                                    <constraint firstAttribute="centerY" secondItem="Ig1-xp-GtZ" secondAttribute="centerY" id="fqC-Qf-vuS"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-SC-ZVZ">
+                                <rect key="frame" x="16" y="72" width="568" height="483"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="The Oakland Post is Oakland University’s independent school newspaper, and they commissioned me to write this app for them!">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="SLP-KV-CRE" secondAttribute="centerY" id="0Uh-o6-yIL"/>
-                            <constraint firstAttribute="centerX" secondItem="SLP-KV-CRE" secondAttribute="centerX" id="n1p-5m-cyI"/>
+                            <constraint firstItem="p3e-SC-ZVZ" firstAttribute="leading" secondItem="IdW-kX-Eqg" secondAttribute="leadingMargin" id="0bw-aT-iIR"/>
+                            <constraint firstItem="zoc-zD-jGB" firstAttribute="top" secondItem="nnA-BA-lxo" secondAttribute="bottom" id="1cG-eE-eIv"/>
+                            <constraint firstItem="c46-9t-RGj" firstAttribute="top" secondItem="YB1-HG-cGx" secondAttribute="bottom" id="GgA-GE-RnU"/>
+                            <constraint firstItem="p3e-SC-ZVZ" firstAttribute="top" secondItem="zoc-zD-jGB" secondAttribute="bottom" constant="8" id="HRm-q8-SS0"/>
+                            <constraint firstItem="YB1-HG-cGx" firstAttribute="leading" secondItem="IdW-kX-Eqg" secondAttribute="leadingMargin" constant="-16" id="JXz-VU-l7W"/>
+                            <constraint firstItem="YB1-HG-cGx" firstAttribute="top" secondItem="p3e-SC-ZVZ" secondAttribute="bottom" constant="1" id="ajW-N5-zhB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YB1-HG-cGx" secondAttribute="trailing" constant="-16" id="iAG-wt-dKn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zoc-zD-jGB" secondAttribute="trailing" constant="-16" id="ny4-eu-CSX"/>
+                            <constraint firstItem="p3e-SC-ZVZ" firstAttribute="trailing" secondItem="IdW-kX-Eqg" secondAttribute="trailingMargin" id="q9j-MO-gH7"/>
+                            <constraint firstItem="zoc-zD-jGB" firstAttribute="leading" secondItem="IdW-kX-Eqg" secondAttribute="leadingMargin" constant="-16" id="tWU-H0-n1b"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -448,17 +492,54 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TypeOneTwo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIT-Hs-NYe">
-                                <rect key="frame" x="251" y="289" width="99" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6Q-wY-2On">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bkz-Gg-T7k"/>
+                                    <barButtonItem tag="2" title="View on GitHub" id="lPS-Fg-Ivf">
+                                        <connections>
+                                            <action selector="linkButtonPressed:" destination="iDt-Rr-WeT" id="kEK-PV-SLQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="LpT-MA-jHb"/>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDo-Zb-yLT">
+                                <rect key="frame" x="16" y="313" width="568" height="242"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="TypeOneTwo is a diabetic tracking &amp; analysis app created by me and two other team members at MHacks IV in Ann Arbor, Michigan.">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TypeOneTwo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tka-Xv-KiB">
+                                <rect key="frame" x="227" y="36" width="146" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" red="0.086274509803921567" green="0.69019607843137254" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeOneTwo Graph" translatesAutoresizingMaskIntoConstraints="NO" id="1dm-oT-FKe">
+                                <rect key="frame" x="140" y="77" width="320" height="228"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="qIT-Hs-NYe" secondAttribute="centerY" id="941-Dz-IKo"/>
-                            <constraint firstAttribute="centerX" secondItem="qIT-Hs-NYe" secondAttribute="centerX" id="ne8-rE-URt"/>
+                            <constraint firstAttribute="centerX" secondItem="1dm-oT-FKe" secondAttribute="centerX" id="9tg-Ox-wqY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F6Q-wY-2On" secondAttribute="trailing" constant="-16" id="B4J-TP-bbd"/>
+                            <constraint firstItem="1dm-oT-FKe" firstAttribute="top" secondItem="Tka-Xv-KiB" secondAttribute="bottom" constant="8" id="Lgq-sH-Bhd"/>
+                            <constraint firstAttribute="centerX" secondItem="Tka-Xv-KiB" secondAttribute="centerX" id="Zxl-w3-sEJ"/>
+                            <constraint firstItem="JDo-Zb-yLT" firstAttribute="leading" secondItem="DYd-B7-zrO" secondAttribute="leadingMargin" id="hFx-c0-vvc"/>
+                            <constraint firstItem="jkt-L3-nJe" firstAttribute="top" secondItem="F6Q-wY-2On" secondAttribute="bottom" id="qmn-QB-Cpv"/>
+                            <constraint firstItem="F6Q-wY-2On" firstAttribute="leading" secondItem="DYd-B7-zrO" secondAttribute="leadingMargin" constant="-16" id="s9S-Gt-FJ1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JDo-Zb-yLT" secondAttribute="trailing" id="vBk-fV-gnN"/>
+                            <constraint firstItem="F6Q-wY-2On" firstAttribute="top" secondItem="JDo-Zb-yLT" secondAttribute="bottom" constant="1" id="xDI-Di-KKK"/>
+                            <constraint firstItem="JDo-Zb-yLT" firstAttribute="top" secondItem="1dm-oT-FKe" secondAttribute="bottom" constant="8" id="xft-fe-i4L"/>
+                            <constraint firstItem="Tka-Xv-KiB" firstAttribute="top" secondItem="Iwv-ys-Soc" secondAttribute="bottom" constant="16" id="yiP-Nn-cd6"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -601,5 +682,6 @@ Cg
     </scenes>
     <resources>
         <image name="Spam Logo" width="350" height="145"/>
+        <image name="TypeOneTwo Graph" width="320" height="228"/>
     </resources>
 </document>
