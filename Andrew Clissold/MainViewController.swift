@@ -23,12 +23,35 @@ class MainViewController: UIViewController {
     @IBOutlet weak var andrewClissoldButton: UIButton!
     @IBOutlet weak var emailButton: UIButton!
 
-    var isContactInfoShowing = false
     let animationDuration: NSTimeInterval = 0.4
-
     let motionManager = CMMotionManager()
 
+    var isContactInfoShowing = false
+    var didCheckForSimulator = false
+
     override func viewDidLoad() {
+        startAccelerometerUpdates()
+    }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if !didCheckForSimulator {
+            checkForSimulator()
+            didCheckForSimulator = true
+        }
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        rotateFrames()
+        contactInfoContainerView.layer.cornerRadius = contactInfoContainerView.frame.size.width/2
+    }
+
+    func startAccelerometerUpdates() {
+        if !motionManager.accelerometerAvailable {
+            return
+        }
+
         motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data, error) in
             let angle = CGFloat(atan2(data.acceleration.x, data.acceleration.y) + M_PI)
 
@@ -38,9 +61,17 @@ class MainViewController: UIViewController {
         }
     }
 
-    override func viewDidLayoutSubviews() {
-        rotateFrames()
-        contactInfoContainerView.layer.cornerRadius = contactInfoContainerView.frame.size.width/2
+    func checkForSimulator() {
+        if !motionManager.accelerometerAvailable {
+            let title = "Note"
+            let message = "This app is not intended to be run in the simulator—it makes " +
+                "use of the accelerometer and the experience of holding a physical device."
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+            let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alert.addAction(action)
+            presentViewController(alert, animated: true, completion: nil)
+            return
+        }
     }
 
     func rotateFrames() {
