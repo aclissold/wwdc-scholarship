@@ -25,12 +25,13 @@ class MainViewController: UIViewController {
 
     let animationDuration: NSTimeInterval = 0.4
     let motionManager = CMMotionManager()
+    let motionQueue = NSOperationQueue()
 
     var isContactInfoShowing = false
     var didCheckForSimulator = false
 
     override func viewDidLoad() {
-        startAccelerometerUpdates()
+        startDeviceMotionUpdates()
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -47,25 +48,27 @@ class MainViewController: UIViewController {
         contactInfoContainerView.layer.cornerRadius = contactInfoContainerView.frame.size.width/2
     }
 
-    func startAccelerometerUpdates() {
-        if !motionManager.accelerometerAvailable {
+    func startDeviceMotionUpdates() {
+        if !motionManager.deviceMotionAvailable {
             return
         }
 
-        motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue()) { (data, error) in
-            let angle = CGFloat(atan2(data.acceleration.x, data.acceleration.y) + M_PI)
-
+        motionManager.startDeviceMotionUpdatesUsingReferenceFrame(.XArbitraryZVertical, toQueue: motionQueue) { (deviceMotion, error) in
+            let angle = CGFloat(atan2(deviceMotion.gravity.x, deviceMotion.gravity.y) + M_PI)
             var rotationTransform = CGAffineTransformIdentity
             rotationTransform = CGAffineTransformRotate(rotationTransform, angle)
-            self.contactInfoContainerView.layer.transform = CATransform3DMakeAffineTransform(rotationTransform)
+
+            dispatch_async(dispatch_get_main_queue()) {
+                self.contactInfoContainerView.layer.transform = CATransform3DMakeAffineTransform(rotationTransform)
+            }
         }
     }
 
     func checkForSimulator() {
-        if !motionManager.accelerometerAvailable {
+        if !motionManager.deviceMotionAvailable {
             let title = "Note"
             let message = "This app is not intended to be run in the simulator—it makes " +
-                "use of the accelerometer and the experience of holding a physical device."
+                "use of device motion and the experience of holding a physical device."
             let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
             let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alert.addAction(action)
