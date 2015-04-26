@@ -12,6 +12,11 @@ class SkillsViewController: UIViewController {
 
     override func viewDidLoad() {
         title = "Skills"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "done:")
+    }
+
+    func done(sender: UIBarButtonItem) {
+        navigationController?.performSegueWithIdentifier("unwindFromSkills", sender: self)
     }
 
     override func prefersStatusBarHidden() -> Bool {

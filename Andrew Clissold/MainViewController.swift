@@ -124,6 +124,32 @@ class MainViewController: UIViewController {
 
     }
 
+    override func segueForUnwindingToViewController(toViewController: UIViewController, fromViewController: UIViewController, identifier: String?) -> UIStoryboardSegue {
+        return UIStoryboardSegue(identifier: identifier, source: fromViewController, destination: toViewController) {
+            let fromView = fromViewController.view
+            let toView = toViewController.view
+            if let containerView = fromView.superview {
+                let initialFrame = fromView.frame
+                var offscreenRect = initialFrame
+                offscreenRect.origin.y = initialFrame.size.height
+                toView.frame = initialFrame
+                containerView.insertSubview(toView, belowSubview: fromView)
+                var rotation = CGAffineTransformMakeRotation(CGFloat(M_PI))
+                toView.layer.transform = CATransform3DMakeAffineTransform(rotation)
+
+                UIView.animateWithDuration(0.4, delay: 0, options: .CurveEaseIn, animations: {
+                        fromView.frame = offscreenRect
+                    }, completion: { finished in
+                        rotation = CGAffineTransformMakeRotation(CGFloat(0))
+                        toView.layer.transform = CATransform3DMakeAffineTransform(rotation)
+                        fromViewController.dismissViewControllerAnimated(false, completion: nil)
+                })
+
+            }
+        }
+    }
+
+
     // MARK: Contact Info
 
     @IBAction func contactInfoButtonTapped(sender: UIButton) {

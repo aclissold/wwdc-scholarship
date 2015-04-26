@@ -18,16 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="SAL-nC-yDG">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="c2I-nf-jDc">
-                            <connections>
-                                <segue destination="2jF-nm-Jj2" kind="unwind" unwindAction="unwindToMainViewController:" id="VqU-6a-gg3"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="SAL-nC-yDG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbt-7R-u4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="2jF-nm-Jj2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="580" y="-991"/>
         </scene>
@@ -850,14 +843,14 @@ Cg
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-ZO-bAw">
                                 <rect key="frame" x="278" y="34" width="306" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
+                                <string key="text">
 Oakland University is a doctoral, research-intensive university located in Oakland County, Michigan.
 
 I experienced a tremendous change in my life while I was there—going from a music major when I started, and completely shifting worlds to computer science which I’ll be graduating with a bachelor’s degree in this Fall.
 
 I had a blast taking music composition lessons, was blown away by the amount of ingenuity and history there are behind famous algorithms, and have been excited by the possibilities machine learning holds.
 
-My favorite achievement was placing in the top ten at MHacks IV, landing my picture on the front page of OU’s website for a while and becoming #oufamous 😄👍</mutableString>
+My favorite achievement was placing in the top ten at MHacks IV, landing my picture on the front page of OU’s website for a while and becoming #oufamous 😄👍</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -926,14 +919,14 @@ My favorite achievement was placing in the top ten at MHacks IV, landing my pict
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-yN-I47">
                                 <rect key="frame" x="185" y="34" width="399" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
+                                <string key="text">
 As a part of the Maelstrom Solstice 2015 design internship program at IBM’s design studio in Austin, Texas, I was entrusted with creating entirely new experiences—from research to implementation—all the while spearheading IBM’s transition to user-centric, mobile-first design thinking.
 
 It was an eye-opening experience to once again be trust into an entirely new world, this time the world of design. Being completely surrounded by hundreds of the most intelligent people I’ve ever met really gave me a tremendous opportunity to grow.
 
 I worked on a team with four other interns—a design researcher, a UX designer, a UI designer, and another front-end developer—and were given full control over the paths we took and the solutions we came up with.
 
-I have no doubt that my experience in Maelstrom has changed my life completely.</mutableString>
+I have no doubt that my experience in Maelstrom has changed my life completely.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1045,9 +1038,11 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="Cty-L2-L1C" kind="relationship" relationship="rootViewController" id="bR3-DQ-dSW"/>
+                        <segue destination="K82-gl-Idt" kind="unwind" identifier="unwindFromSkills" unwindAction="unwindToMainViewController:" id="2aZ-NV-yh4"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqi-wb-1pI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="K82-gl-Idt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="580" y="-295"/>
         </scene>
@@ -1090,14 +1085,14 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-H7-pQ7">
                                 <rect key="frame" x="156" y="34" width="428" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
+                                <string key="text">
 An internship with Domino’s is my current endeavor, and I haven’t even been writing this chapter of my life for a month yet!
 
 Once again I have found myself with an amazing opportunity, this time working back home in Michigan at Domino’s world headquarters in Ann Arbor on the #4 Food &amp; Drink app on the App Store.
 
 It’s the complete flipside of the coin from what I experienced at IBM, coding for 8 hours a day 5 days a week as opposed to five days total! And so far, I love it just as much.
 
-I finally achieved my goal of the past couple years—to be an iOS developer with an eye for design—and can only imagine how much I’ll learn in the coming months being trust into such a massive codebase!</mutableString>
+I finally achieved my goal of the past couple years—to be an iOS developer with an eye for design—and can only imagine how much I’ll learn in the coming months being trust into such a massive codebase!</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
