@@ -49,7 +49,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-l4-X46">
-                                <rect key="frame" x="216" y="195" width="384" height="33"/>
+                                <rect key="frame" x="54" y="203" width="546" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-YB-Mrr">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -81,7 +81,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOH-Is-GBz">
-                                <rect key="frame" x="216" y="228" width="384" height="33"/>
+                                <rect key="frame" x="96" y="236" width="504" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-ed-TP6">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -113,7 +113,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eO-TT-PdD">
-                                <rect key="frame" x="216" y="261" width="384" height="33"/>
+                                <rect key="frame" x="67" y="269" width="533" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYZ-4b-yRc">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -145,7 +145,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HM-dg-O6V">
-                                <rect key="frame" x="108" y="294" width="492" height="33"/>
+                                <rect key="frame" x="43" y="302" width="557" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-32-sfG">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -177,7 +177,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-Bp-fkW">
-                                <rect key="frame" x="108" y="327" width="492" height="33"/>
+                                <rect key="frame" x="34" y="335" width="566" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-Uf-86P">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -209,7 +209,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdP-zF-kIF">
-                                <rect key="frame" x="108" y="360" width="492" height="33"/>
+                                <rect key="frame" x="88" y="368" width="512" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ8-5C-nLW">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -240,67 +240,80 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                     </mask>
                                 </variation>
                             </scrollView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGv-it-5lZ">
-                                <rect key="frame" x="108" y="393" width="492" height="33"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHu-LW-4WE">
-                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <attributes>
-                                                    <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="mHu-LW-4WE" secondAttribute="bottom" id="FmS-Fq-kNp"/>
-                                    <constraint firstAttribute="trailing" secondItem="mHu-LW-4WE" secondAttribute="trailing" constant="-4085" id="JWb-jE-wQ5"/>
-                                    <constraint firstItem="mHu-LW-4WE" firstAttribute="top" secondItem="qGv-it-5lZ" secondAttribute="top" id="Rsd-TR-vig"/>
-                                    <constraint firstAttribute="height" constant="33" id="SXg-sh-5DA"/>
-                                    <constraint firstItem="mHu-LW-4WE" firstAttribute="leading" secondItem="qGv-it-5lZ" secondAttribute="leading" id="Z5E-rE-P8n"/>
-                                    <constraint firstAttribute="trailing" secondItem="mHu-LW-4WE" secondAttribute="trailing" id="hmv-0E-4Zf"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="hmv-0E-4Zf"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylX-Lt-AHz">
+                                <rect key="frame" x="16" y="211" width="30" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objective-C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP3-Cx-MfE">
+                                <rect key="frame" x="16" y="244" width="72" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Python" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7N-yX-Qu7">
+                                <rect key="frame" x="16" y="277" width="43" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-vh-fLc">
+                                <rect key="frame" x="16" y="310" width="19" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-3k-hkG">
+                                <rect key="frame" x="16" y="343" width="10" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JavaScript" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeA-8v-PaK">
+                                <rect key="frame" x="16" y="376" width="64" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="qGv-it-5lZ" secondAttribute="trailing" id="3bZ-Pg-n1h"/>
-                            <constraint firstItem="nOH-Is-GBz" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="216" id="66l-EQ-va8"/>
-                            <constraint firstItem="8eO-TT-PdD" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="216" id="EBM-LP-Cz7"/>
-                            <constraint firstItem="tk7-l4-X46" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="216" id="GPn-UT-7Bq"/>
+                            <constraint firstItem="nOH-Is-GBz" firstAttribute="leading" secondItem="uP3-Cx-MfE" secondAttribute="trailing" constant="8" id="9Va-sJ-mXB"/>
+                            <constraint firstItem="g7N-yX-Qu7" firstAttribute="centerY" secondItem="8eO-TT-PdD" secondAttribute="centerY" id="Cvv-eE-NHM"/>
+                            <constraint firstItem="tk7-l4-X46" firstAttribute="leading" secondItem="ylX-Lt-AHz" secondAttribute="trailing" constant="8" id="DEN-2u-GUc"/>
                             <constraint firstAttribute="trailing" secondItem="nOH-Is-GBz" secondAttribute="trailing" id="Hag-2X-PtX"/>
                             <constraint firstItem="TLb-2j-Lyo" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="LxJ-RW-ee3">
                                 <string key="userLabel">Horizontal Space - (16) - My number one skill is my ability to learn. This complements my love for learning incredibly well—the two go hand in hand, and the more I learn, the more I love to learn.  In addition to being a power user of tools like Xcode, Sketch, and Vim (I love keyboard shortcuts), here’s some languages I’ve learned in the past couple years: - View</string>
                             </constraint>
+                            <constraint firstItem="tk7-l4-X46" firstAttribute="centerY" secondItem="ylX-Lt-AHz" secondAttribute="centerY" id="NDq-x6-CXS"/>
+                            <constraint firstItem="UeA-8v-PaK" firstAttribute="centerY" secondItem="xdP-zF-kIF" secondAttribute="centerY" id="NRR-wW-JI4"/>
+                            <constraint firstItem="UeA-8v-PaK" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="NnB-lc-tFj"/>
                             <constraint firstAttribute="trailing" secondItem="TLb-2j-Lyo" secondAttribute="trailing" constant="16" id="OzK-Zk-hBP"/>
                             <constraint firstItem="xdP-zF-kIF" firstAttribute="top" secondItem="kQT-Bp-fkW" secondAttribute="bottom" id="QBZ-pR-Git"/>
+                            <constraint firstItem="uP3-Cx-MfE" firstAttribute="centerY" secondItem="nOH-Is-GBz" secondAttribute="centerY" id="U0J-ay-U94"/>
                             <constraint firstAttribute="trailing" secondItem="xdP-zF-kIF" secondAttribute="trailing" id="U6q-Ib-ZVk"/>
                             <constraint firstItem="TLb-2j-Lyo" firstAttribute="top" secondItem="OKr-kw-b93" secondAttribute="top" constant="54" id="VLH-uj-79H"/>
-                            <constraint firstItem="FNG-YB-Mrr" firstAttribute="top" secondItem="TLb-2j-Lyo" secondAttribute="bottom" id="WZs-Ff-En0"/>
                             <constraint firstItem="kQT-Bp-fkW" firstAttribute="top" secondItem="9HM-dg-O6V" secondAttribute="bottom" id="Zld-nM-uWU"/>
+                            <constraint firstItem="g7N-yX-Qu7" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="aMc-10-uK9"/>
                             <constraint firstAttribute="trailing" secondItem="kQT-Bp-fkW" secondAttribute="trailing" id="cLl-rX-3Cc"/>
+                            <constraint firstItem="kQT-Bp-fkW" firstAttribute="leading" secondItem="Kyy-3k-hkG" secondAttribute="trailing" constant="8" id="fRG-7L-izS"/>
                             <constraint firstItem="9HM-dg-O6V" firstAttribute="top" secondItem="8eO-TT-PdD" secondAttribute="bottom" id="gay-GE-7xv"/>
+                            <constraint firstItem="ylX-Lt-AHz" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="gkE-Ql-5LU"/>
+                            <constraint firstItem="9HM-dg-O6V" firstAttribute="centerY" secondItem="xO0-vh-fLc" secondAttribute="centerY" id="gqo-Sd-JYf"/>
+                            <constraint firstItem="tk7-l4-X46" firstAttribute="top" secondItem="TLb-2j-Lyo" secondAttribute="bottom" constant="8" id="h4b-yg-EAR"/>
+                            <constraint firstItem="8eO-TT-PdD" firstAttribute="leading" secondItem="g7N-yX-Qu7" secondAttribute="trailing" constant="8" id="jwa-Oe-bMH"/>
+                            <constraint firstItem="xO0-vh-fLc" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="jz3-dp-YHX"/>
                             <constraint firstItem="8eO-TT-PdD" firstAttribute="top" secondItem="nOH-Is-GBz" secondAttribute="bottom" id="kLE-8U-YBZ"/>
                             <constraint firstAttribute="trailing" secondItem="9HM-dg-O6V" secondAttribute="trailing" id="kWr-Sm-OU9"/>
-                            <constraint firstItem="9HM-dg-O6V" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="108" id="rFI-Hn-MGk"/>
+                            <constraint firstItem="xdP-zF-kIF" firstAttribute="leading" secondItem="UeA-8v-PaK" secondAttribute="trailing" constant="8" id="lLH-55-c0f"/>
                             <constraint firstAttribute="trailing" secondItem="8eO-TT-PdD" secondAttribute="trailing" id="spU-IF-mFI"/>
-                            <constraint firstItem="xdP-zF-kIF" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="108" id="tWz-Ma-AF6"/>
-                            <constraint firstItem="kQT-Bp-fkW" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="108" id="ur5-0m-Axr"/>
-                            <constraint firstItem="qGv-it-5lZ" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="108" id="xin-Jh-rB1"/>
+                            <constraint firstItem="uP3-Cx-MfE" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="txP-nE-Ga2"/>
                             <constraint firstAttribute="trailing" secondItem="tk7-l4-X46" secondAttribute="trailing" id="xxb-cz-QyC"/>
-                            <constraint firstItem="qGv-it-5lZ" firstAttribute="top" secondItem="xdP-zF-kIF" secondAttribute="bottom" id="zJn-qb-gIf"/>
+                            <constraint firstItem="9HM-dg-O6V" firstAttribute="leading" secondItem="xO0-vh-fLc" secondAttribute="trailing" constant="8" id="yHt-WU-BLK"/>
+                            <constraint firstItem="Kyy-3k-hkG" firstAttribute="centerY" secondItem="kQT-Bp-fkW" secondAttribute="centerY" id="yfL-Oe-5be"/>
                             <constraint firstItem="nOH-Is-GBz" firstAttribute="top" secondItem="tk7-l4-X46" secondAttribute="bottom" id="zOF-3h-5ee"/>
+                            <constraint firstItem="Kyy-3k-hkG" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="zaa-5t-KUI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SAL-nC-yDG"/>
@@ -317,8 +330,6 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                         <outletCollection property="textViews" destination="Fo0-Uf-86P" collectionClass="NSMutableArray" id="ODh-kW-EU6"/>
                         <outletCollection property="scrollViews" destination="xdP-zF-kIF" collectionClass="NSMutableArray" id="9Nu-tZ-gn6"/>
                         <outletCollection property="textViews" destination="pJ8-5C-nLW" collectionClass="NSMutableArray" id="BJw-cI-4pC"/>
-                        <outletCollection property="scrollViews" destination="qGv-it-5lZ" collectionClass="NSMutableArray" id="4EZ-CY-EW3"/>
-                        <outletCollection property="textViews" destination="mHu-LW-4WE" collectionClass="NSMutableArray" id="mb3-hD-wLn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbt-7R-u4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
