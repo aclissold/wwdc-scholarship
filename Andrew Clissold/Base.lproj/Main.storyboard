@@ -847,11 +847,17 @@ Cg
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-ZO-bAw">
-                                <rect key="frame" x="270" y="34" width="314" height="521"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-ZO-bAw">
+                                <rect key="frame" x="278" y="34" width="306" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">
-Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">
+Oakland University is a doctoral, research-intensive university located in Oakland County, Michigan.
+
+I experienced a tremendous change in my life while I was there—going from a music major when I started, and completely shifting worlds to computer science which I’ll be graduating with a bachelor’s degree in this Fall.
+
+I had a blast taking music composition lessons, was blown away by the amount of ingenuity and history there are behind famous algorithms, and have been excited by the possibilities machine learning holds.
+
+My favorite achievement was placing in the top ten at MHacks IV, landing my picture on the front page of OU’s website for a while and becoming #oufamous 😄👍</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -877,7 +883,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                             <constraint firstAttribute="trailingMargin" secondItem="H1n-fl-7Xn" secondAttribute="trailing" constant="-16" id="Kuo-kw-THq"/>
                             <constraint firstItem="qyL-Aa-DS3" firstAttribute="top" secondItem="H1n-fl-7Xn" secondAttribute="bottom" id="M1s-Zw-cuz"/>
                             <constraint firstItem="O6P-ev-FsS" firstAttribute="leading" secondItem="YS3-jC-H1T" secondAttribute="leading" constant="16" id="SKH-JW-Phr"/>
-                            <constraint firstItem="s9W-ZO-bAw" firstAttribute="leading" secondItem="O6P-ev-FsS" secondAttribute="trailing" constant="8" id="THG-tl-9th"/>
+                            <constraint firstItem="s9W-ZO-bAw" firstAttribute="leading" secondItem="O6P-ev-FsS" secondAttribute="trailing" constant="16" id="THG-tl-9th"/>
                             <constraint firstAttribute="trailing" secondItem="s9W-ZO-bAw" secondAttribute="trailing" constant="16" id="cFO-ET-FJy"/>
                             <constraint firstItem="s9W-ZO-bAw" firstAttribute="top" secondItem="YS3-jC-H1T" secondAttribute="top" constant="34" id="fWA-pH-CxE"/>
                             <constraint firstItem="H1n-fl-7Xn" firstAttribute="top" secondItem="s9W-ZO-bAw" secondAttribute="bottom" constant="1" id="tXj-Ak-UzG"/>
@@ -914,11 +920,17 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-yN-I47">
-                                <rect key="frame" x="177" y="34" width="407" height="521"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-yN-I47">
+                                <rect key="frame" x="185" y="34" width="399" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">
-Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">
+As a part of the Maelstrom Solstice 2015 design internship program at IBM’s design studio in Austin, Texas, I was entrusted with creating entirely new experiences—from research to implementation—all the while spearheading IBM’s transition to user-centric, mobile-first design thinking.
+
+It was an eye-opening experience to once again be trust into an entirely new world, this time the world of design. Being completely surrounded by hundreds of the most intelligent people I’ve ever met really gave me a tremendous opportunity to grow.
+
+I worked on a team with four other interns—a design researcher, a UX designer, a UI designer, and another front-end developer—and were given full control over the paths we took and the solutions we came up with.
+
+I have no doubt that my experience in Maelstrom has changed my life completely.</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -939,7 +951,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                         <constraints>
                             <constraint firstItem="ivh-rz-IKl" firstAttribute="top" secondItem="9qP-yN-I47" secondAttribute="bottom" constant="1" id="7m5-di-9W6"/>
                             <constraint firstAttribute="bottom" secondItem="ivh-rz-IKl" secondAttribute="bottom" id="ADR-xE-7sj"/>
-                            <constraint firstItem="9qP-yN-I47" firstAttribute="leading" secondItem="bmD-VS-7em" secondAttribute="trailing" constant="8" id="C2a-88-qZV"/>
+                            <constraint firstItem="9qP-yN-I47" firstAttribute="leading" secondItem="bmD-VS-7em" secondAttribute="trailing" constant="16" id="C2a-88-qZV"/>
                             <constraint firstAttribute="trailing" secondItem="9qP-yN-I47" secondAttribute="trailing" constant="16" id="FI4-m2-EKi"/>
                             <constraint firstAttribute="trailing" secondItem="ivh-rz-IKl" secondAttribute="trailing" id="Uwm-xF-88m"/>
                             <constraint firstAttribute="centerY" secondItem="bmD-VS-7em" secondAttribute="centerY" id="efI-Y0-2rF"/>
@@ -1069,11 +1081,17 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-H7-pQ7">
-                                <rect key="frame" x="148" y="34" width="436" height="521"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-H7-pQ7">
+                                <rect key="frame" x="156" y="34" width="428" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">
-Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">
+An internship with Domino’s is my current endeavor, and I haven’t even been writing this chapter of my life for a month yet!
+
+Once again I have found myself with an amazing opportunity, this time working back home in Michigan at Domino’s world headquarters in Ann Arbor on the #4 Food &amp; Drink app on the App Store.
+
+It’s the complete flipside of the coin from what I experienced at IBM, coding for 8 hours a day 5 days a week as opposed to five days total! And so far, I love it just as much.
+
+I finally achieved my goal of the past couple years—to be an iOS developer with an eye for design—and can only imagine how much I’ll learn in the coming months being trust into such a massive codebase!</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1100,7 +1118,7 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                             <constraint firstItem="L5U-G5-CO8" firstAttribute="top" secondItem="2YL-Da-oRc" secondAttribute="bottom" id="Ccl-f4-2j7"/>
                             <constraint firstAttribute="trailing" secondItem="2YL-Da-oRc" secondAttribute="trailing" id="Fh0-pi-Juz"/>
                             <constraint firstItem="CEH-p1-5zC" firstAttribute="leading" secondItem="XOW-Kj-o6U" secondAttribute="leading" constant="16" id="XxY-ST-fhV"/>
-                            <constraint firstItem="zRK-H7-pQ7" firstAttribute="leading" secondItem="CEH-p1-5zC" secondAttribute="trailing" constant="8" id="cBa-Lm-jji"/>
+                            <constraint firstItem="zRK-H7-pQ7" firstAttribute="leading" secondItem="CEH-p1-5zC" secondAttribute="trailing" constant="16" id="cBa-Lm-jji"/>
                             <constraint firstAttribute="centerY" secondItem="CEH-p1-5zC" secondAttribute="centerY" id="ccO-Ew-Yym"/>
                             <constraint firstItem="zRK-H7-pQ7" firstAttribute="top" secondItem="XOW-Kj-o6U" secondAttribute="top" constant="34" id="fCV-ep-MzU"/>
                             <constraint firstAttribute="bottom" secondItem="2YL-Da-oRc" secondAttribute="bottom" id="rbs-10-cs3"/>
