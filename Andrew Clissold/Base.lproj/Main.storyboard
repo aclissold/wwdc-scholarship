@@ -833,7 +833,30 @@ Cg
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="to build the project!">
+                                    <fragment content="to build ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="your">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" project!">
                                         <attributes>
                                             <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
@@ -934,10 +957,48 @@ Cg
                                 <rect key="frame" x="16" y="96" width="568" height="459"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="The Oakland Post is Oakland University’s independent school newspaper, and they commissioned me to write this app for them!">
+                                    <fragment content="The Oakland Post is Oakland University’s independent school newspaper, and they commissioned me to write ">
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
                                             <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="this">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" app for them!">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+It was a wonderful summer project, and a lot of fun to create something that my own campus community could use.
+
+Through this app, I participated in the “Summer of Swift” on GitHub, an ephemeral contest to learn Swift by doing.
+
+And, something amazing happened—I submitted the app to Hacker News and </string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="made the front page! ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-LightItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="This app is definitely a milestone in my transition to the world of software development.">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -1005,7 +1066,7 @@ Cg
                                 </items>
                             </toolbar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDo-Zb-yLT">
-                                <rect key="frame" x="16" y="321" width="568" height="234"/>
+                                <rect key="frame" x="16" y="341" width="568" height="214"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TypeOneTwo is a diabetic tracking &amp; analysis app created by me and two other team members at MHacks IV in Ann Arbor, Michigan.">
@@ -1015,17 +1076,28 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+We set out to create a trifecta of apps—an Android, iOS, and webapp all tied together as one system. This gave us the opportunity to touch on a lot of cool technologies: Swift and HealthKit, Go, RESTful APIs, and Facebook’s Parse framework.
+
+Not only did we write the only Swift app at the hackathon, but we placed in the top ten doing so! I’m still in disbelief over it every now and then.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TypeOneTwo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tka-Xv-KiB">
-                                <rect key="frame" x="227" y="44" width="146" height="33"/>
+                                <rect key="frame" x="227" y="64" width="146" height="33"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
                                 <color key="textColor" red="0.086274509803921567" green="0.69019607843137254" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeOneTwo Graph" translatesAutoresizingMaskIntoConstraints="NO" id="1dm-oT-FKe">
-                                <rect key="frame" x="140" y="85" width="320" height="228"/>
+                                <rect key="frame" x="140" y="105" width="320" height="228"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1037,7 +1109,7 @@ Cg
                             <constraint firstItem="JDo-Zb-yLT" firstAttribute="leading" secondItem="DYd-B7-zrO" secondAttribute="leading" constant="16" id="F2E-GU-TFI"/>
                             <constraint firstItem="1dm-oT-FKe" firstAttribute="top" secondItem="Tka-Xv-KiB" secondAttribute="bottom" constant="8" id="Lgq-sH-Bhd"/>
                             <constraint firstItem="F6Q-wY-2On" firstAttribute="leading" secondItem="DYd-B7-zrO" secondAttribute="leading" id="MgL-Wc-8gW"/>
-                            <constraint firstItem="Tka-Xv-KiB" firstAttribute="top" secondItem="DYd-B7-zrO" secondAttribute="top" constant="44" id="TG3-kz-qSg"/>
+                            <constraint firstItem="Tka-Xv-KiB" firstAttribute="top" secondItem="DYd-B7-zrO" secondAttribute="top" constant="64" id="TG3-kz-qSg"/>
                             <constraint firstAttribute="centerX" secondItem="Tka-Xv-KiB" secondAttribute="centerX" id="Zxl-w3-sEJ"/>
                             <constraint firstAttribute="bottom" secondItem="F6Q-wY-2On" secondAttribute="bottom" id="cbd-Jk-vOY"/>
                             <constraint firstItem="jkt-L3-nJe" firstAttribute="top" secondItem="F6Q-wY-2On" secondAttribute="bottom" id="qmn-QB-Cpv"/>

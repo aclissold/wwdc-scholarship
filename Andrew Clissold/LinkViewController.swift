@@ -17,7 +17,7 @@ class LinkViewController: UIViewController {
     let links = [
         "https://github.com/spamproject/spam",
         "itms://itunes.apple.com/us/app/oakland-post/id931152313?mt=8",
-        "https://github.com/aclissold/mhacks",
+        "https://github.com/aclissold/typeonetwo",
         "http://oakland.edu",
         "http://ibm.com/design",
         "itms://itunes.apple.com/us/app/dominos-pizza-usa/id436491861?mt=8"
