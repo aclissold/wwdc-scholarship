@@ -897,6 +897,9 @@ My favorite achievement was placing in the top ten at MHacks IV, landing my pict
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="s9W-ZO-bAw" id="VVt-nV-Kgn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4D-uS-m6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -960,6 +963,9 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                             <constraint firstItem="ivh-rz-IKl" firstAttribute="leading" secondItem="jqH-Sx-UaR" secondAttribute="leading" id="pnk-hn-fvr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="9qP-yN-I47" id="dMF-o6-YYl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZU-a0-xvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1131,6 +1137,9 @@ I finally achieved my goal of the past couple years—to be an iOS developer wit
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="zRK-H7-pQ7" id="zy3-Gh-g52"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PfR-br-gxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
