@@ -31,13 +31,14 @@
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue-LightItalic"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-LightItalic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content"> for learning incredibly well—the two go hand in hand, and the more I learn, the more I love to learn.
+                                        <string key="content"> for learning—the two go hand in hand, and the more I learn, the more I love to learn.
 
-In addition to being a power user of tools like Xcode, Sketch, and Vim (I </string>
+In addition to being a power user of tools like Xcode, Sketch, and Vim (I also </string>
                                         <attributes>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
@@ -376,7 +377,9 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <constraints>
                                     <constraint firstAttribute="height" constant="171" id="5LX-0i-m4f"/>
                                 </constraints>
-                                <string key="text">My favorite thing about coding is the creation aspect. It’s unbelievably cool to be one of the few people that can literally make something out of nothing. And that creative essence permeates everything I do—when I’m not a developer, I’m a composer. Here’s just a small selection of what I’ve done.</string>
+                                <string key="text">My favorite thing about coding is the aspect of creation. It’s unbelievably cool to be one of the few people in the world that can quite literally make something out of nothing.
+
+And this creative essence permeates everything I do—when I’m not a developer, I’m a composer. Here’s just a small selection of what I’ve done.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -614,8 +617,30 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <rect key="frame" x="16" y="197" width="568" height="358"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">spam is an exploratory Swift package manager, enabling the use of third-party Swift modules outside the context of an iOS or OS X app! And it's dead simple to use:</string>
+                                    <fragment content="spam is an exploratory Swift package manager, enabling the use of ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="open-source">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Swift modules outside the context of an iOS or OS X app! And it's dead simple to use:">
                                         <attributes>
                                             <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
@@ -964,13 +989,13 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="this">
+                                    <fragment content="an iOS">
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" app for them!">
+                                    <fragment content=" app for ">
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
                                             <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
@@ -978,13 +1003,13 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
+                                        <string key="content">them.
 
 It was a wonderful summer project, and a lot of fun to create something that my own campus community could use.
 
-Through this app, I participated in the “Summer of Swift” on GitHub, an ephemeral contest to learn Swift by doing.
+Through the app, I participated in the “Summer of Swift” on GitHub, an ephemeral contest to learn Swift by doing.
 
-And, something amazing happened—I submitted the app to Hacker News and </string>
+And, something amazing happened—I submitted my GitHub repo to Hacker News and </string>
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -996,7 +1021,7 @@ And, something amazing happened—I submitted the app to Hacker News and </strin
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="This app is definitely a milestone in my transition to the world of software development.">
+                                    <fragment content="The Oakland Post is a major milestone in my transition to the world of software development.">
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -1081,7 +1106,19 @@ And, something amazing happened—I submitted the app to Hacker News and </strin
 
 We set out to create a trifecta of apps—an Android, iOS, and webapp all tied together as one system. This gave us the opportunity to touch on a lot of cool technologies: Swift and HealthKit, Go, RESTful APIs, and Facebook’s Parse framework.
 
-Not only did we write the only Swift app at the hackathon, but we placed in the top ten doing so! I’m still in disbelief over it every now and then.</string>
+Not only did we write the only Swift app at the hackathon, but we placed in the </string>
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="top ten">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-LightItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" doing so! I’m still in disbelief over it every now and then, and am even more excited for my next hackathon!">
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -1125,6 +1162,9 @@ Not only did we write the only Swift app at the hackathon, but we placed in the 
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="JDo-Zb-yLT" id="2Qn-Dy-a74"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYi-Aw-2ca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1186,14 +1226,14 @@ Not only did we write the only Swift app at the hackathon, but we placed in the 
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-ZO-bAw">
                                 <rect key="frame" x="278" y="34" width="306" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">
+                                <mutableString key="text">
 Oakland University is a doctoral, research-intensive university located in Oakland County, Michigan.
 
-I experienced a tremendous change in my life while I was there—going from a music major when I started, and completely shifting worlds to computer science which I’ll be graduating with a bachelor’s degree in this Fall.
+I experienced tremendous growth while I was there—I started out as a music major, and completely shifted worlds to that of computer science, and will be graduating this Fall.
 
-I had a blast taking music composition lessons, was blown away by the amount of ingenuity and history there are behind famous algorithms, and have been excited by the possibilities machine learning holds.
+I had a blast taking music composition lessons, was blown away by the amount of ingenuity and history there are behind famous algorithms, and have been excited by the many possibilities machine learning holds.
 
-My favorite achievement was placing in the top ten at MHacks IV, landing my picture on the front page of OU’s website for a while and becoming #oufamous 😄👍</string>
+My favorite achievement was placing in the top ten at MHacks IV, landing my picture on the front page of OU’s website for a while and becoming #oufamous 😄👍</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1262,14 +1302,14 @@ My favorite achievement was placing in the top ten at MHacks IV, landing my pict
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-yN-I47">
                                 <rect key="frame" x="185" y="34" width="399" height="521"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">
+                                <mutableString key="text">
 As a part of the Maelstrom Solstice 2015 design internship program at IBM’s design studio in Austin, Texas, I was entrusted with creating entirely new experiences—from research to implementation—all the while spearheading IBM’s transition to user-centric, mobile-first design thinking.
 
-It was an eye-opening experience to once again be trust into an entirely new world, this time the world of design. Being completely surrounded by hundreds of the most intelligent people I’ve ever met really gave me a tremendous opportunity to grow.
+It was an eye-opening experience to once again be thrusted into an entirely new world, this time that of design. Being completely surrounded by hundreds of the most intelligent people I’ve ever met really gave me a tremendous opportunity to grow.
 
-I worked on a team with four other interns—a design researcher, a UX designer, a UI designer, and another front-end developer—and were given full control over the paths we took and the solutions we came up with.
+I worked on a team with four other interns—a design researcher, a UX designer, a UI designer, and another front-end developer—and was given full control over the paths we took and the solutions we came up with.
 
-I have no doubt that my experience in Maelstrom has changed my life completely.</string>
+I have no doubt that my experience in Maelstrom has changed my life completely.</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
