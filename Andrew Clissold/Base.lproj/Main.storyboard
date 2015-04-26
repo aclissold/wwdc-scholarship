@@ -77,8 +77,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tve-DA-i8i">
-                                <rect key="frame" x="248" y="285" width="104" height="30"/>
-                                <state key="normal" title="Brass Quartet?">
+                                <rect key="frame" x="235" y="559" width="131" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="“Brass Quartet?”">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -86,8 +87,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6k-QZ-DHe">
-                                <rect key="frame" x="280" y="247" width="41" height="30"/>
-                                <state key="normal" title="Grave">
+                                <rect key="frame" x="16" y="559" width="61" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="“Grave”">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -95,23 +97,59 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-4t-HZB">
-                                <rect key="frame" x="280" y="323" width="40" height="30"/>
-                                <state key="normal" title="Haiku">
+                                <rect key="frame" x="525" y="559" width="59" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="“Haiku”">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="rnH-1P-2oX" kind="show" identifier="showHaikuPDF" id="hId-U1-H9y"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-O3-h5T">
+                                <rect key="frame" x="16" y="64" width="568" height="171"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="5LX-0i-m4f"/>
+                                </constraints>
+                                <string key="text">My favorite thing about coding is the creation aspect. It’s unbelievably cool to be one of the few people that can literally make something out of nothing. And that creative essence permeates everything I do—when I’m not a developer, I’m a composer. Here’s just a small selection of what I’ve done.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B1-tG-xmQ">
+                                <rect key="frame" x="260" y="521" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="b1B-h5-hyg" eventType="touchUpInside" id="XEX-pe-uGb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-HY-jM8">
+                                <rect key="frame" x="298" y="521" width="43" height="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause:" destination="b1B-h5-hyg" eventType="touchUpInside" id="y9j-JA-kKp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="f6k-QZ-DHe" secondAttribute="centerX" id="4O5-el-eti"/>
-                            <constraint firstAttribute="centerY" secondItem="Tve-DA-i8i" secondAttribute="centerY" id="A76-LI-qrt"/>
-                            <constraint firstItem="Tve-DA-i8i" firstAttribute="top" secondItem="f6k-QZ-DHe" secondAttribute="bottom" constant="8" id="HTL-MO-WEH"/>
-                            <constraint firstAttribute="centerX" secondItem="Tve-DA-i8i" secondAttribute="centerX" id="aAY-GE-m4T"/>
-                            <constraint firstItem="FPg-4t-HZB" firstAttribute="top" secondItem="Tve-DA-i8i" secondAttribute="bottom" constant="8" id="aME-UB-EZO"/>
-                            <constraint firstAttribute="centerX" secondItem="FPg-4t-HZB" secondAttribute="centerX" id="sxF-IK-hqZ"/>
+                            <constraint firstItem="f6k-QZ-DHe" firstAttribute="leading" secondItem="5oX-kA-Rmd" secondAttribute="leadingMargin" id="7gc-tX-QCO"/>
+                            <constraint firstItem="ce0-vl-6Di" firstAttribute="top" secondItem="Tve-DA-i8i" secondAttribute="bottom" constant="8" id="APW-tf-pT5"/>
+                            <constraint firstItem="ce0-vl-6Di" firstAttribute="top" secondItem="FPg-4t-HZB" secondAttribute="bottom" constant="8" id="Ods-EL-RC1"/>
+                            <constraint firstItem="Tve-DA-i8i" firstAttribute="top" secondItem="5B1-tG-xmQ" secondAttribute="bottom" constant="8" id="TJh-wI-r2Z"/>
+                            <constraint firstAttribute="centerX" secondItem="Tve-DA-i8i" secondAttribute="centerX" id="YAE-xi-Aps"/>
+                            <constraint firstAttribute="centerX" secondItem="5B1-tG-xmQ" secondAttribute="centerX" constant="25" id="afR-Ox-3t4"/>
+                            <constraint firstItem="FPg-4t-HZB" firstAttribute="trailing" secondItem="5oX-kA-Rmd" secondAttribute="trailingMargin" id="dvu-fF-BR7"/>
+                            <constraint firstItem="Tve-DA-i8i" firstAttribute="top" secondItem="ihO-HY-jM8" secondAttribute="bottom" constant="8" id="eZP-qq-Y7O"/>
+                            <constraint firstItem="fNm-O3-h5T" firstAttribute="trailing" secondItem="5oX-kA-Rmd" secondAttribute="trailingMargin" id="i6E-Eb-l9I"/>
+                            <constraint firstItem="ihO-HY-jM8" firstAttribute="leading" secondItem="5B1-tG-xmQ" secondAttribute="trailing" constant="8" id="tlf-TR-KaO"/>
+                            <constraint firstItem="fNm-O3-h5T" firstAttribute="top" secondItem="szS-HE-wJ2" secondAttribute="bottom" id="xL3-Cb-aJI"/>
+                            <constraint firstItem="ce0-vl-6Di" firstAttribute="top" secondItem="f6k-QZ-DHe" secondAttribute="bottom" constant="8" id="xo8-yN-KvZ"/>
+                            <constraint firstItem="fNm-O3-h5T" firstAttribute="leading" secondItem="5oX-kA-Rmd" secondAttribute="leadingMargin" id="ywi-y7-VJM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7er-6y-yAE">
@@ -121,6 +159,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outletCollection property="pieceButtons" destination="f6k-QZ-DHe" collectionClass="NSMutableArray" id="JtZ-dW-9Cb"/>
+                        <outletCollection property="pieceButtons" destination="Tve-DA-i8i" collectionClass="NSMutableArray" id="GgA-gR-MfF"/>
+                        <outletCollection property="pieceButtons" destination="FPg-4t-HZB" collectionClass="NSMutableArray" id="zx9-N9-Sjg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bQt-bf-7MO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="E3T-Hg-E6q" userLabel="Exit" sceneMemberID="exit"/>
@@ -287,8 +330,21 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <string key="content">spam is an exploratory Swift package manager, enabling the use of third-party Swift modules outside the context of an iOS or OS X app! And it's dead simple to use:
-
+                                        <string key="content">spam is an exploratory Swift package manager, enabling the use of third-party Swift modules outside the context of an iOS or OS X app! And it's dead simple to use:</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
 </string>
                                         <attributes>
                                             <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -381,8 +437,34 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">
-…is all spam needs in order to know where the module lives, how to compile it, and how to integrate it with your own code. Then, simply run </string>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">…is all spam needs in order to know where the module lives, how to compile it, and how to integrate it with your own code. Then, simply run</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -406,7 +488,31 @@ Cg
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" to clone the module(s) from GitHub and ">
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="to clone the module(s) from GitHub and">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
@@ -430,12 +536,24 @@ Cg
                                             <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                         </attributes>
                                     </fragment>
-                                    <fragment content=" to build the project!">
+                                    <fragment content=" ">
                                         <attributes>
                                             <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <real key="NSKern" value="0.0"/>
                                             <font key="NSOriginalFont" size="11" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="to build the project!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -523,7 +641,8 @@ Cg
                                 <attributedString key="attributedText">
                                     <fragment content="The Oakland Post is Oakland University’s independent school newspaper, and they commissioned me to write this app for them!">
                                         <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -580,7 +699,8 @@ Cg
                                 <attributedString key="attributedText">
                                     <fragment content="TypeOneTwo is a diabetic tracking &amp; analysis app created by me and two other team members at MHacks IV in Ann Arbor, Michigan.">
                                         <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="16" name="HelveticaNeue-Light"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>

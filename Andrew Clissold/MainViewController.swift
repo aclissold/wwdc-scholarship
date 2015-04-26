@@ -7,6 +7,8 @@
 //
 
 import UIKit
+
+import AVFoundation
 import CoreMotion
 
 class MainViewController: UIViewController {
@@ -32,7 +34,9 @@ class MainViewController: UIViewController {
     var didUpdateContactInfoContainerViewCornerRadius = false
 
     override func viewDidLoad() {
+        super.viewDidLoad()
         startDeviceMotionUpdates()
+        setUpAudioSession()
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -66,6 +70,12 @@ class MainViewController: UIViewController {
                 self.contactInfoContainerView.layer.transform = CATransform3DMakeAffineTransform(rotationTransform)
             }
         }
+    }
+
+    func setUpAudioSession() {
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
+        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
     }
 
     func checkForSimulator() {
