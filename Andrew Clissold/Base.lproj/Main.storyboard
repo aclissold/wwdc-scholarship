@@ -793,10 +793,10 @@ Cg
             </objects>
             <point key="canvasLocation" x="2690" y="429"/>
         </scene>
-        <!--View Controller-->
+        <!--Link View Controller-->
         <scene sceneID="vEP-Aa-cOm">
             <objects>
-                <viewController storyboardIdentifier="OaklandUniversityViewController" id="9BD-xu-4yo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OaklandUniversityViewController" id="9BD-xu-4yo" customClass="LinkViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YFE-yh-tZ0"/>
                         <viewControllerLayoutGuide type="bottom" id="qyL-Aa-DS3"/>
@@ -806,16 +806,43 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oakland University" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6P-ev-FsS">
-                                <rect key="frame" x="228" y="289" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="16" y="281" width="246" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-ZO-bAw">
+                                <rect key="frame" x="270" y="28" width="314" height="527"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1n-fl-7Xn">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3xE-67-lBN"/>
+                                    <barButtonItem tag="3" title="Visit oakland.edu" id="Use-TG-hjY">
+                                        <connections>
+                                            <action selector="linkButtonPressed:" destination="9BD-xu-4yo" id="t6r-8Z-o5a"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="08h-p7-8ST"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="H1n-fl-7Xn" firstAttribute="leading" secondItem="YS3-jC-H1T" secondAttribute="leadingMargin" constant="-16" id="1br-qa-yLJ"/>
                             <constraint firstAttribute="centerY" secondItem="O6P-ev-FsS" secondAttribute="centerY" id="6Hb-Iz-Uwi"/>
-                            <constraint firstAttribute="centerX" secondItem="O6P-ev-FsS" secondAttribute="centerX" id="Jqy-qU-Mf1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H1n-fl-7Xn" secondAttribute="trailing" constant="-16" id="Kuo-kw-THq"/>
+                            <constraint firstItem="qyL-Aa-DS3" firstAttribute="top" secondItem="H1n-fl-7Xn" secondAttribute="bottom" id="M1s-Zw-cuz"/>
+                            <constraint firstItem="s9W-ZO-bAw" firstAttribute="trailing" secondItem="YS3-jC-H1T" secondAttribute="trailingMargin" id="SBA-d0-f88"/>
+                            <constraint firstItem="s9W-ZO-bAw" firstAttribute="leading" secondItem="O6P-ev-FsS" secondAttribute="trailing" constant="8" id="THG-tl-9th"/>
+                            <constraint firstItem="s9W-ZO-bAw" firstAttribute="top" secondItem="YFE-yh-tZ0" secondAttribute="bottom" constant="8" id="Zii-6a-WlW"/>
+                            <constraint firstItem="O6P-ev-FsS" firstAttribute="leading" secondItem="YS3-jC-H1T" secondAttribute="leadingMargin" id="dR8-Rx-2xK"/>
+                            <constraint firstItem="H1n-fl-7Xn" firstAttribute="top" secondItem="s9W-ZO-bAw" secondAttribute="bottom" constant="1" id="tXj-Ak-UzG"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -823,65 +850,62 @@ Cg
             </objects>
             <point key="canvasLocation" x="3418" y="-295"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="b8s-Ca-lrH">
+        <!--Link View Controller-->
+        <scene sceneID="U8T-tn-JBj">
             <objects>
-                <viewController storyboardIdentifier="IBMDesignViewController" id="UTw-tp-RVJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IBMDesignViewController" id="T5Q-I0-iwi" customClass="LinkViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="v2A-fU-7sE"/>
-                        <viewControllerLayoutGuide type="bottom" id="tPA-92-YUl"/>
+                        <viewControllerLayoutGuide type="top" id="u0Y-oa-6Hz"/>
+                        <viewControllerLayoutGuide type="bottom" id="JiX-sF-LaA"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nwn-7f-Nox">
+                    <view key="view" contentMode="scaleToFill" id="jqH-Sx-UaR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBM Design" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxQ-ZX-Thc">
-                                <rect key="frame" x="256" y="289" width="89" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBM Design" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmD-VS-7em">
+                                <rect key="frame" x="16" y="281" width="153" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-yN-I47">
+                                <rect key="frame" x="177" y="28" width="407" height="527"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivh-rz-IKl">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="MPf-nc-0sH"/>
+                                    <barButtonItem tag="4" title="Visit ibm.com/design" id="S75-eL-yab">
+                                        <connections>
+                                            <action selector="linkButtonPressed:" destination="T5Q-I0-iwi" id="aeF-Sd-KsU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NiF-pA-8pY"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="PxQ-ZX-Thc" secondAttribute="centerY" id="AI0-RP-LlC"/>
-                            <constraint firstAttribute="centerX" secondItem="PxQ-ZX-Thc" secondAttribute="centerX" id="aAx-ub-UD5"/>
+                            <constraint firstItem="ivh-rz-IKl" firstAttribute="top" secondItem="9qP-yN-I47" secondAttribute="bottom" constant="1" id="0HV-gZ-efr"/>
+                            <constraint firstItem="9qP-yN-I47" firstAttribute="trailing" secondItem="jqH-Sx-UaR" secondAttribute="trailingMargin" id="4BM-Xe-rSl"/>
+                            <constraint firstItem="9qP-yN-I47" firstAttribute="leading" secondItem="bmD-VS-7em" secondAttribute="trailing" constant="8" id="C2a-88-qZV"/>
+                            <constraint firstItem="JiX-sF-LaA" firstAttribute="top" secondItem="ivh-rz-IKl" secondAttribute="bottom" id="H26-g4-opZ"/>
+                            <constraint firstItem="ivh-rz-IKl" firstAttribute="leading" secondItem="jqH-Sx-UaR" secondAttribute="leadingMargin" constant="-16" id="LcY-JO-fcg"/>
+                            <constraint firstItem="9qP-yN-I47" firstAttribute="top" secondItem="u0Y-oa-6Hz" secondAttribute="bottom" constant="8" id="QXp-tG-SEC"/>
+                            <constraint firstItem="bmD-VS-7em" firstAttribute="leading" secondItem="jqH-Sx-UaR" secondAttribute="leadingMargin" id="UX3-dv-pp5"/>
+                            <constraint firstAttribute="centerY" secondItem="bmD-VS-7em" secondAttribute="centerY" id="efI-Y0-2rF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ivh-rz-IKl" secondAttribute="trailing" constant="-16" id="kgi-hA-sAv"/>
                         </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cy-iR-R06" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZZU-a0-xvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3418" y="429"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="z0v-e7-yiJ">
-            <objects>
-                <viewController storyboardIdentifier="DominosViewController" id="bBD-rc-gQ3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Z3a-vV-pGx"/>
-                        <viewControllerLayoutGuide type="bottom" id="c7m-92-OUe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Cvl-XN-9lH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domino’s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-Ix-Jiy">
-                                <rect key="frame" x="264" y="289" width="72" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="u4j-Ix-Jiy" secondAttribute="centerX" id="hQd-Ya-kea"/>
-                            <constraint firstAttribute="centerY" secondItem="u4j-Ix-Jiy" secondAttribute="centerY" id="mRW-Mg-XYa"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lDf-eZ-OTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3418" y="1135"/>
         </scene>
         <!--Portrait Navigation Controller-->
         <scene sceneID="wgW-JO-UA1">
@@ -980,6 +1004,63 @@ Cg
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HgP-LB-4Sh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-122" y="429"/>
+        </scene>
+        <!--Link View Controller-->
+        <scene sceneID="3Eb-EC-YDS">
+            <objects>
+                <viewController storyboardIdentifier="DominosViewController" id="7nJ-sp-bVK" customClass="LinkViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jes-bx-ffx"/>
+                        <viewControllerLayoutGuide type="bottom" id="L5U-G5-CO8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XOW-Kj-o6U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domino’s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-p1-5zC">
+                                <rect key="frame" x="16" y="281" width="124" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-H7-pQ7">
+                                <rect key="frame" x="148" y="28" width="436" height="527"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">
+Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YL-Da-oRc">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="euY-cf-Zoc"/>
+                                    <barButtonItem tag="5" title="View in App Store" id="ptW-VL-59I">
+                                        <connections>
+                                            <action selector="linkButtonPressed:" destination="7nJ-sp-bVK" id="JkC-mv-7GG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qto-Dd-GLN"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2YL-Da-oRc" firstAttribute="leading" secondItem="XOW-Kj-o6U" secondAttribute="leadingMargin" constant="-16" id="17a-3b-EHz"/>
+                            <constraint firstItem="2YL-Da-oRc" firstAttribute="top" secondItem="zRK-H7-pQ7" secondAttribute="bottom" constant="1" id="4hH-Ve-zYh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2YL-Da-oRc" secondAttribute="trailing" constant="-16" id="9s1-19-OHm"/>
+                            <constraint firstItem="L5U-G5-CO8" firstAttribute="top" secondItem="2YL-Da-oRc" secondAttribute="bottom" id="Ccl-f4-2j7"/>
+                            <constraint firstItem="CEH-p1-5zC" firstAttribute="leading" secondItem="XOW-Kj-o6U" secondAttribute="leadingMargin" id="EFx-8d-GjE"/>
+                            <constraint firstItem="zRK-H7-pQ7" firstAttribute="leading" secondItem="CEH-p1-5zC" secondAttribute="trailing" constant="8" id="cBa-Lm-jji"/>
+                            <constraint firstAttribute="centerY" secondItem="CEH-p1-5zC" secondAttribute="centerY" id="ccO-Ew-Yym"/>
+                            <constraint firstItem="zRK-H7-pQ7" firstAttribute="top" secondItem="Jes-bx-ffx" secondAttribute="bottom" constant="8" id="if8-57-F3O"/>
+                            <constraint firstItem="zRK-H7-pQ7" firstAttribute="trailing" secondItem="XOW-Kj-o6U" secondAttribute="trailingMargin" id="khf-8s-OIn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PfR-br-gxo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418" y="1135"/>
         </scene>
     </scenes>
     <resources>
