@@ -22,7 +22,7 @@ class SkillsViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         let textWidth = (textView.text! as NSString).boundingRectWithSize(textView.frame.size,
             options: .UsesLineFragmentOrigin,
-            attributes: [NSFontAttributeName: UIFont(name: "HelveticaNeue-Light", size: 17)!],
+            attributes: [NSFontAttributeName: UIFont(name: "Menlo", size: 14)!],
             context: nil).size.width
         textView.contentInset = UIEdgeInsetsZero
         scrollView.contentSize.width = textWidth

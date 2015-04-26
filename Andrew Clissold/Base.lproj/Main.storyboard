@@ -17,8 +17,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLb-2j-Lyo">
+                                <rect key="frame" x="16" y="64" width="568" height="141"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">My number one skill is my ability to learn. This complements my love for learning incredibly well—the two go hand in hand, and the more I learn, the more I love to learn.
+
+In addition to being a power user of tools like Xcode, Sketch, and Vim (I </string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="love">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-LightItalic"/>
+                                            <font key="NSOriginalFont" size="17" name="HelveticaNeue-LightItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" keyboard shortcuts), here’s some languages I’ve learned in the past couple years:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-l4-X46">
-                                <rect key="frame" x="60" y="64" width="540" height="33"/>
+                                <rect key="frame" x="44" y="213" width="540" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-YB-Mrr">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -52,9 +83,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tk7-l4-X46" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="60" id="GPn-UT-7Bq"/>
-                            <constraint firstItem="tk7-l4-X46" firstAttribute="top" secondItem="OKr-kw-b93" secondAttribute="top" constant="64" id="cmL-a7-ktS"/>
-                            <constraint firstAttribute="trailing" secondItem="tk7-l4-X46" secondAttribute="trailing" id="xxb-cz-QyC"/>
+                            <constraint firstItem="tk7-l4-X46" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="44" id="GPn-UT-7Bq"/>
+                            <constraint firstItem="TLb-2j-Lyo" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="LxJ-RW-ee3"/>
+                            <constraint firstAttribute="trailing" secondItem="TLb-2j-Lyo" secondAttribute="trailing" constant="16" id="OzK-Zk-hBP"/>
+                            <constraint firstItem="TLb-2j-Lyo" firstAttribute="top" secondItem="OKr-kw-b93" secondAttribute="top" constant="64" id="VLH-uj-79H"/>
+                            <constraint firstItem="FNG-YB-Mrr" firstAttribute="top" secondItem="TLb-2j-Lyo" secondAttribute="bottom" constant="8" id="WZs-Ff-En0"/>
+                            <constraint firstAttribute="trailing" secondItem="tk7-l4-X46" secondAttribute="trailing" constant="16" id="xxb-cz-QyC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SAL-nC-yDG"/>
@@ -870,7 +904,7 @@ Cg
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oakland University" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6P-ev-FsS">
                                 <rect key="frame" x="16" y="281" width="246" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-ZO-bAw">
@@ -946,7 +980,7 @@ My favorite achievement was placing in the top ten at MHacks IV, landing my pict
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBM Design" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmD-VS-7em">
                                 <rect key="frame" x="16" y="281" width="153" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-yN-I47">
@@ -1111,7 +1145,7 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domino’s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-p1-5zC">
                                 <rect key="frame" x="16" y="281" width="124" height="39"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-H7-pQ7">
