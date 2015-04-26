@@ -15,6 +15,7 @@
 		B5631CEA1AECADF500800731 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5631CE91AECADF500800731 /* MediaPlayer.framework */; };
 		B5631CEC1AECADFC00800731 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5631CEB1AECADFC00800731 /* AVFoundation.framework */; };
 		B5631CEE1AECB8C900800731 /* HaikuPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5631CED1AECB8C900800731 /* HaikuPlayerViewController.swift */; };
+		B5631CF01AECBC4100800731 /* AudioPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5631CEF1AECBC4100800731 /* AudioPlayers.swift */; };
 		B59833BD1AE7277900809D03 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59833BC1AE7277900809D03 /* BackgroundViewController.swift */; };
 		B59833BF1AE7278100809D03 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59833BE1AE7278100809D03 /* SkillsViewController.swift */; };
 		B59833C11AE7278800809D03 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59833C01AE7278800809D03 /* InterestsViewController.swift */; };
@@ -47,6 +48,7 @@
 		B5631CE91AECADF500800731 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		B5631CEB1AECADFC00800731 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B5631CED1AECB8C900800731 /* HaikuPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaikuPlayerViewController.swift; sourceTree = "<group>"; };
+		B5631CEF1AECBC4100800731 /* AudioPlayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayers.swift; sourceTree = "<group>"; };
 		B59833BC1AE7277900809D03 /* BackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
 		B59833BE1AE7278100809D03 /* SkillsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		B59833C01AE7278800809D03 /* InterestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				B59833C01AE7278800809D03 /* InterestsViewController.swift */,
 				B5631CED1AECB8C900800731 /* HaikuPlayerViewController.swift */,
+				B5631CEF1AECBC4100800731 /* AudioPlayers.swift */,
 				B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */,
 				B5CE8FDA1AEC6E3200189DE0 /* Grave.mp3 */,
 				B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */,
@@ -261,6 +264,7 @@
 				B5CE8FE41AEC920B00189DE0 /* Constants.swift in Sources */,
 				B59833C51AE7295800809D03 /* LandscapeRightNavigation.swift in Sources */,
 				B59833C11AE7278800809D03 /* InterestsViewController.swift in Sources */,
+				B5631CF01AECBC4100800731 /* AudioPlayers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

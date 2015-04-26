@@ -19,10 +19,6 @@ class InterestsViewController: UIViewController  {
     @IBOutlet weak var brassQuartetPlayPauseButton: UIButton!
     @IBOutlet weak var haikuPlayPauseButton: UIButton!
 
-    var gravePlayer: AVAudioPlayer!
-    var brassQuartetPlayer: AVAudioPlayer!
-    var haikuPlayer: HaikuPlayerViewController!
-
     func audioPlayerEndInterruption(player: AVAudioPlayer!, withOptions flags: Int) {
         if UInt(flags) == AVAudioSessionInterruptionOptions.OptionShouldResume.rawValue  {
             player.play()
@@ -38,27 +34,17 @@ class InterestsViewController: UIViewController  {
     override func viewDidLoad() {
         title = "Interests"
         theme()
-        setUpAudioPlayers()
+        if audioPlayers.gravePlayer.playing {
+            gravePlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
+        } else if audioPlayers.brassQuartetPlayer.playing {
+            brassQuartetPlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
+        }
     }
 
     func theme() {
         for button in pieceButtons {
             button.setTitleColor(andrewClissoldRed, forState: .Normal)
         }
-    }
-
-    func setUpAudioPlayers() {
-        let gravePath = NSBundle.mainBundle().pathForResource("Grave", ofType: "mp3")!
-        let brassQuartetPath = NSBundle.mainBundle().pathForResource("Brass Quartet?", ofType: "mp3")!
-        let haikuPath = NSBundle.mainBundle().pathForResource("Haiku", ofType: "mp4")!
-
-        let graveURL = NSURL(fileURLWithPath: gravePath)!
-        let brassQuartetURL = NSURL(fileURLWithPath: brassQuartetPath)!
-        let haikuURL = NSURL(fileURLWithPath: haikuPath)!
-
-        gravePlayer = AVAudioPlayer(contentsOfURL: graveURL, fileTypeHint: AVFileTypeMPEGLayer3, error: nil)
-        brassQuartetPlayer = AVAudioPlayer(contentsOfURL: brassQuartetURL, fileTypeHint: AVFileTypeMPEGLayer3, error: nil)
-        haikuPlayer = HaikuPlayerViewController(contentURL: haikuURL)
     }
 
     override func prefersStatusBarHidden() -> Bool {
@@ -83,44 +69,38 @@ class InterestsViewController: UIViewController  {
     @IBAction func playPause(sender: UIButton) {
         switch sender.tag {
         case 0: // Grave
-            if gravePlayer.playing {
-                gravePlayer.pause()
+            if audioPlayers.gravePlayer.playing {
+                audioPlayers.gravePlayer.pause()
                 gravePlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
             } else {
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
-                brassQuartetPlayer.stop()
+                audioPlayers.brassQuartetPlayer.stop()
                 gravePlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
-                gravePlayer.play()
+                audioPlayers.gravePlayer.play()
             }
         case 1: // Brass Quartet?
-            if brassQuartetPlayer.playing {
-                brassQuartetPlayer.pause()
+            if audioPlayers.brassQuartetPlayer.playing {
+                audioPlayers.brassQuartetPlayer.pause()
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
             } else {
                 gravePlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
-                gravePlayer.stop()
+                audioPlayers.gravePlayer.stop()
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
-                brassQuartetPlayer.play()
+                audioPlayers.brassQuartetPlayer.play()
             }
         case 2: // Haiku
-            if gravePlayer.playing {
-                gravePlayer.stop()
+            if audioPlayers.gravePlayer.playing {
+                audioPlayers.gravePlayer.stop()
                 gravePlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
             }
-            if brassQuartetPlayer.playing {
-                brassQuartetPlayer.stop()
+            if audioPlayers.brassQuartetPlayer.playing {
+                audioPlayers.brassQuartetPlayer.stop()
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
             }
-            NSNotificationCenter.defaultCenter().addObserver(self,
-                selector: "movieFinished:", name: MPMoviePlayerPlaybackDidFinishNotification, object: nil)
-            presentMoviePlayerViewControllerAnimated(haikuPlayer)
+            presentMoviePlayerViewControllerAnimated(audioPlayers.haikuPlayer)
         default:
             fatalError("unknown play/pause button tapped")
         }
-    }
-
-    func movieFinished(notification: NSNotification) {
-
     }
 
 }
