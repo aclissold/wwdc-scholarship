@@ -34,9 +34,9 @@ class InterestsViewController: UIViewController  {
     override func viewDidLoad() {
         title = "Interests"
         theme()
-        if audioPlayers.gravePlayer.playing {
+        if audioPlayers.gravePlayerPlaying {
             gravePlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
-        } else if audioPlayers.brassQuartetPlayer.playing {
+        } else if audioPlayers.brassQuartetPlayerPlaying {
             brassQuartetPlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
         }
    }
@@ -70,44 +70,30 @@ class InterestsViewController: UIViewController  {
         // TODO: refactor these into three different methods on the AudioPlayers class
         switch sender.tag {
         case 0: // Grave
-            if audioPlayers.gravePlayer.playing {
-                audioPlayers.gravePlayer.pause()
+            if audioPlayers.gravePlayerPlaying {
+                audioPlayers.pauseGrave()
                 gravePlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
-                MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [:]
             } else {
+                audioPlayers.playGrave()
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
-                audioPlayers.brassQuartetPlayer.stop()
                 gravePlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
-                audioPlayers.gravePlayer.play()
-                MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [
-                    MPMediaItemPropertyTitle: "Grave",
-                    MPMediaItemPropertyArtist: "Andrew Clissold",
-                    MPNowPlayingInfoPropertyPlaybackRate: 1
-                ]
             }
         case 1: // Brass Quartet?
-            if audioPlayers.brassQuartetPlayer.playing {
-                audioPlayers.brassQuartetPlayer.pause()
+            if audioPlayers.brassQuartetPlayerPlaying {
+                audioPlayers.pauseBrassQuartet()
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
-                MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [:]
             } else {
+                audioPlayers.playBrassQuartet()
                 gravePlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
-                audioPlayers.gravePlayer.stop()
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
-                audioPlayers.brassQuartetPlayer.play()
-                MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [
-                    MPMediaItemPropertyTitle: "Brass Quartet?",
-                    MPMediaItemPropertyArtist: "Andrew Clissold",
-                    MPNowPlayingInfoPropertyPlaybackRate: 1
-                ]
             }
         case 2: // Haiku
-            if audioPlayers.gravePlayer.playing {
-                audioPlayers.gravePlayer.stop()
+            if audioPlayers.gravePlayerPlaying {
+                audioPlayers.pauseGrave()
                 gravePlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
             }
-            if audioPlayers.brassQuartetPlayer.playing {
-                audioPlayers.brassQuartetPlayer.stop()
+            if audioPlayers.brassQuartetPlayerPlaying {
+                audioPlayers.pauseBrassQuartet()
                 brassQuartetPlayPauseButton.setImage(UIImage(named: "Play"), forState: .Normal)
             }
             presentMoviePlayerViewControllerAnimated(audioPlayers.haikuPlayer)

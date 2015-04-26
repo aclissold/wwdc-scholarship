@@ -12,9 +12,18 @@ import MediaPlayer
 let audioPlayers = AudioPlayers()
 
 class AudioPlayers: NSObject, AVAudioPlayerDelegate {
-    var gravePlayer: AVAudioPlayer!
-    var brassQuartetPlayer: AVAudioPlayer!
+    private var gravePlayer: AVAudioPlayer!
+    private var brassQuartetPlayer: AVAudioPlayer!
+    var gravePlayerPlaying: Bool {
+        return gravePlayer.playing
+    }
+    var brassQuartetPlayerPlaying: Bool {
+        return brassQuartetPlayer.playing
+    }
+
     var haikuPlayer: HaikuPlayerViewController!
+
+    var mostRecentPlayer: AVAudioPlayer?
 
     override init() {
         super.init()
@@ -31,6 +40,12 @@ class AudioPlayers: NSObject, AVAudioPlayerDelegate {
         brassQuartetPlayer = AVAudioPlayer(contentsOfURL: brassQuartetURL, fileTypeHint: AVFileTypeMPEGLayer3, error: nil)
         haikuPlayer = HaikuPlayerViewController(contentURL: haikuURL)
 
+        MPRemoteCommandCenter.sharedCommandCenter().playCommand.addTargetWithHandler { (event) -> MPRemoteCommandHandlerStatus in
+            if let mostRecentPlayer = self.mostRecentPlayer {
+                mostRecentPlayer.play()
+            }
+            return .Success
+        }
         MPRemoteCommandCenter.sharedCommandCenter().pauseCommand.addTargetWithHandler { (event) -> MPRemoteCommandHandlerStatus in
             if self.gravePlayer.playing {
                 self.gravePlayer.pause()
@@ -40,16 +55,38 @@ class AudioPlayers: NSObject, AVAudioPlayerDelegate {
             }
             return .Success
         }
-        MPRemoteCommandCenter.sharedCommandCenter().playCommand.addTargetWithHandler { (event) -> MPRemoteCommandHandlerStatus in
-            if self.gravePlayer.playing {
-                self.gravePlayer.play()
-            } else if self.brassQuartetPlayer.playing {
-                self.brassQuartetPlayer.play()
-            }
-            return .Success
-        }
         MPRemoteCommandCenter.sharedCommandCenter().previousTrackCommand.enabled = false
         MPRemoteCommandCenter.sharedCommandCenter().nextTrackCommand.enabled = false
+    }
+
+    func playGrave() {
+        brassQuartetPlayer.stop()
+        gravePlayer.play()
+        mostRecentPlayer = gravePlayer
+        MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [
+            MPMediaItemPropertyTitle: "Grave",
+            MPMediaItemPropertyArtist: "Andrew Clissold",
+            MPNowPlayingInfoPropertyPlaybackRate: 1
+        ]
+    }
+
+    func pauseGrave() {
+        gravePlayer.pause()
+    }
+
+    func playBrassQuartet() {
+        gravePlayer.stop()
+        brassQuartetPlayer.play()
+        mostRecentPlayer = brassQuartetPlayer
+        MPNowPlayingInfoCenter.defaultCenter().nowPlayingInfo = [
+            MPMediaItemPropertyTitle: "Brass Quartet?",
+            MPMediaItemPropertyArtist: "Andrew Clissold",
+            MPNowPlayingInfoPropertyPlaybackRate: 1
+        ]
+    }
+
+    func pauseBrassQuartet() {
+        brassQuartetPlayer.pause()
     }
 
 }
