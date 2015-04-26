@@ -20,8 +20,22 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLb-2j-Lyo">
                                 <rect key="frame" x="16" y="54" width="568" height="141"/>
                                 <attributedString key="attributedText">
+                                    <fragment content="My number one skill is my ability to learn. This complements my ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="love">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue-LightItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
                                     <fragment>
-                                        <string key="content">My number one skill is my ability to learn. This complements my love for learning incredibly well—the two go hand in hand, and the more I learn, the more I love to learn.
+                                        <string key="content"> for learning incredibly well—the two go hand in hand, and the more I learn, the more I love to learn.
 
 In addition to being a power user of tools like Xcode, Sketch, and Vim (I </string>
                                         <attributes>
@@ -52,11 +66,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <rect key="frame" x="54" y="203" width="546" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-YB-Mrr">
-                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="4318" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <string key="content">import WatchKit import Foundation class InterfaceController: WKInterfaceController { @IBOutlet weak var silenceSwitch: WKInterfaceSwitch!  override func awakeWithContext(context: AnyObject?) { super.awakeWithContext(context) let silence = userDefaults.boolForKey("silence") silenceSwitch.setOn(silence) } @IBAction func silenceSwitchToggled(value: Bool) { userDefaults.setBool(value, forKey: "silence") userDefaults.synchronize() WKInterfaceController.openParentApplication(["silence": value], reply: nil) } }  </string>
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="Menlo-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -84,11 +98,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <rect key="frame" x="96" y="236" width="504" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-ed-TP6">
-                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="5034" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <string key="content">#import &lt;SpriteKit/SpriteKit.h&gt; #import "TheoryViewController.h" #import "MainScene.h" #import "TrumpScene.h" @interface TheoryViewController () @end @implementation TheoryViewController #if DEBUG - (void)viewDidLoad { [super viewDidLoad]; SKView *spriteView = (SKView *)self.view; spriteView.showsDrawCount = YES; spriteView.showsFPS = YES; spriteView.showsNodeCount = YES; } #endif - (void)viewWillAppear:(BOOL)animated { TrumpScene *scene = [[TrumpScene alloc] initWithSize:[UIScreen mainScreen].bounds.size]; SKView *spriteView = (SKView *)self.view; [spriteView presentScene:scene]; } @end  </string>
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="Menlo-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -116,11 +130,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <rect key="frame" x="67" y="269" width="533" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYZ-4b-yRc">
-                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="4085" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <string key="content">def main(): isPrime = True i = 10001 num = 2 while i &gt; 0: isPrime = True for j in range(2, num): if num % j == 0: isPrime = False if isPrime: print(num, "prime number #", 10002-i) i -= 1 num += 1 if __name__ == '__main__': main()  </string>
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="Menlo-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -148,11 +162,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <rect key="frame" x="43" y="302" width="557" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-32-sfG">
-                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="5144" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <string key="content">package main import ( "image" "image/color" "image/png" "log" "math/rand" "os" "time") var size int var img *image.RGBA var r *rand.Rand func main() { setup() draw() write() } func setup() { size = 1024 img = image.NewRGBA(image.Rect(0, 0, size, size)) t := time.Now().UnixNano() s := rand.NewSource(t) r = rand.New(s) } func draw() { for y := 0; y &lt; size; y++ { for x := 0; x &lt; size; x++ { gray := color.Gray16{uint16(r.Intn(65536))} img.Set(x, y, gray) } } } func write() { file, err := os.Create("noise.png") if err != nil { log.Fatal(err) } err = png.Encode(file, img) if err != nil { log.Fatal(err) } }  </string>
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="Menlo-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -177,14 +191,14 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-Bp-fkW">
-                                <rect key="frame" x="34" y="335" width="566" height="33"/>
+                                <rect key="frame" x="53" y="335" width="547" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-Uf-86P">
-                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="5051" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <string key="content">package edu.self.music; import org.jfugue.Player; import org.jfugue.Pattern; public class Voices { public static void main(String[] args) { Player player = new Player(); Pattern trumpet1 = new Pattern("V1 I[Trumpet]"); Pattern trumpet2 = new Pattern("V2 I[Trumpet]"); Pattern tuba = new Pattern("V3 I[Tuba]"); Pattern song = new Pattern(); trumpet1.add("X[Volume]=7500 C E D F E G A B C6q. R"); trumpet2.add("X[Volume]=7500 E G F A G B C G Eq. R"); tuba.add("X[Volume]=7500 C3h C3h C3h F2 G2 C2q. R"); song.add(trumpet1); song.add(trumpet2); song.add(tuba); player.play(song); player.close(); } }  </string>
                                                 <attributes>
                                                     <font key="NSFont" size="14" name="Menlo-Regular"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
@@ -205,38 +219,6 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="C3p-cG-ruD"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdP-zF-kIF">
-                                <rect key="frame" x="88" y="368" width="512" height="33"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ8-5C-nLW">
-                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                <attributes>
-                                                    <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="pJ8-5C-nLW" firstAttribute="top" secondItem="xdP-zF-kIF" secondAttribute="top" id="6yO-Q8-wes"/>
-                                    <constraint firstAttribute="bottom" secondItem="pJ8-5C-nLW" secondAttribute="bottom" id="NO5-1G-M3i"/>
-                                    <constraint firstAttribute="height" constant="33" id="ZgM-0T-7t0"/>
-                                    <constraint firstItem="pJ8-5C-nLW" firstAttribute="leading" secondItem="xdP-zF-kIF" secondAttribute="leading" id="dpC-1V-jgo"/>
-                                    <constraint firstAttribute="trailing" secondItem="pJ8-5C-nLW" secondAttribute="trailing" id="xye-M9-72V"/>
-                                    <constraint firstAttribute="trailing" secondItem="pJ8-5C-nLW" secondAttribute="trailing" constant="-4085" id="ydw-Q0-Wd5"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="xye-M9-72V"/>
                                     </mask>
                                 </variation>
                             </scrollView>
@@ -264,14 +246,8 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-3k-hkG">
-                                <rect key="frame" x="16" y="343" width="10" height="17"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JavaScript" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UeA-8v-PaK">
-                                <rect key="frame" x="16" y="376" width="64" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Java" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-3k-hkG">
+                                <rect key="frame" x="16" y="343" width="29" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -287,12 +263,8 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <string key="userLabel">Horizontal Space - (16) - My number one skill is my ability to learn. This complements my love for learning incredibly well—the two go hand in hand, and the more I learn, the more I love to learn.  In addition to being a power user of tools like Xcode, Sketch, and Vim (I love keyboard shortcuts), here’s some languages I’ve learned in the past couple years: - View</string>
                             </constraint>
                             <constraint firstItem="tk7-l4-X46" firstAttribute="centerY" secondItem="ylX-Lt-AHz" secondAttribute="centerY" id="NDq-x6-CXS"/>
-                            <constraint firstItem="UeA-8v-PaK" firstAttribute="centerY" secondItem="xdP-zF-kIF" secondAttribute="centerY" id="NRR-wW-JI4"/>
-                            <constraint firstItem="UeA-8v-PaK" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="NnB-lc-tFj"/>
                             <constraint firstAttribute="trailing" secondItem="TLb-2j-Lyo" secondAttribute="trailing" constant="16" id="OzK-Zk-hBP"/>
-                            <constraint firstItem="xdP-zF-kIF" firstAttribute="top" secondItem="kQT-Bp-fkW" secondAttribute="bottom" id="QBZ-pR-Git"/>
                             <constraint firstItem="uP3-Cx-MfE" firstAttribute="centerY" secondItem="nOH-Is-GBz" secondAttribute="centerY" id="U0J-ay-U94"/>
-                            <constraint firstAttribute="trailing" secondItem="xdP-zF-kIF" secondAttribute="trailing" id="U6q-Ib-ZVk"/>
                             <constraint firstItem="TLb-2j-Lyo" firstAttribute="top" secondItem="OKr-kw-b93" secondAttribute="top" constant="54" id="VLH-uj-79H"/>
                             <constraint firstItem="kQT-Bp-fkW" firstAttribute="top" secondItem="9HM-dg-O6V" secondAttribute="bottom" id="Zld-nM-uWU"/>
                             <constraint firstItem="g7N-yX-Qu7" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="aMc-10-uK9"/>
@@ -306,7 +278,6 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                             <constraint firstItem="xO0-vh-fLc" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="jz3-dp-YHX"/>
                             <constraint firstItem="8eO-TT-PdD" firstAttribute="top" secondItem="nOH-Is-GBz" secondAttribute="bottom" id="kLE-8U-YBZ"/>
                             <constraint firstAttribute="trailing" secondItem="9HM-dg-O6V" secondAttribute="trailing" id="kWr-Sm-OU9"/>
-                            <constraint firstItem="xdP-zF-kIF" firstAttribute="leading" secondItem="UeA-8v-PaK" secondAttribute="trailing" constant="8" id="lLH-55-c0f"/>
                             <constraint firstAttribute="trailing" secondItem="8eO-TT-PdD" secondAttribute="trailing" id="spU-IF-mFI"/>
                             <constraint firstItem="uP3-Cx-MfE" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="txP-nE-Ga2"/>
                             <constraint firstAttribute="trailing" secondItem="tk7-l4-X46" secondAttribute="trailing" id="xxb-cz-QyC"/>
@@ -328,8 +299,6 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                         <outletCollection property="textViews" destination="PnU-32-sfG" collectionClass="NSMutableArray" id="dNl-Yr-jMX"/>
                         <outletCollection property="scrollViews" destination="kQT-Bp-fkW" collectionClass="NSMutableArray" id="Rud-hl-sNm"/>
                         <outletCollection property="textViews" destination="Fo0-Uf-86P" collectionClass="NSMutableArray" id="ODh-kW-EU6"/>
-                        <outletCollection property="scrollViews" destination="xdP-zF-kIF" collectionClass="NSMutableArray" id="9Nu-tZ-gn6"/>
-                        <outletCollection property="textViews" destination="pJ8-5C-nLW" collectionClass="NSMutableArray" id="BJw-cI-4pC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbt-7R-u4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
