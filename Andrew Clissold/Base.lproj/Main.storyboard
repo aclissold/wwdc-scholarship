@@ -18,74 +18,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-l4-X46">
-                                <rect key="frame" x="60" y="64" width="540" height="29"/>
+                                <rect key="frame" x="60" y="64" width="540" height="33"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-qD-zt4">
-                                        <rect key="frame" x="0.0" y="0.0" width="8875" height="17"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-YB-Mrr">
+                                        <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
-                                            <fragment content="C">
-                                                <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
                                             <fragment>
-                                                <string key="content">urabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et</string>
+                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content=". ">
-                                                <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</string>
-                                                <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content=" ">
-                                                <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment>
-                                                <string key="content">Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod.</string>
-                                                <attributes>
-                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <font key="NSFont" size="14" name="Menlo-Regular"/>
-                                                    <font key="NSOriginalFont" size="17" name="HelveticaNeue-Light"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="fvy-qD-zt4" secondAttribute="trailing" constant="-8875" id="EHk-dS-UUc"/>
-                                    <constraint firstItem="fvy-qD-zt4" firstAttribute="leading" secondItem="tk7-l4-X46" secondAttribute="leading" id="GYs-I5-O9v"/>
-                                    <constraint firstItem="fvy-qD-zt4" firstAttribute="top" secondItem="tk7-l4-X46" secondAttribute="top" id="JFB-Jw-g37"/>
-                                    <constraint firstAttribute="height" constant="29" id="JoH-zk-Hqz"/>
-                                    <constraint firstAttribute="bottom" secondItem="fvy-qD-zt4" secondAttribute="bottom" constant="8" id="b76-hg-hvj"/>
-                                    <constraint firstAttribute="trailing" secondItem="fvy-qD-zt4" secondAttribute="trailing" constant="-1000" id="hmT-jB-Gwz"/>
+                                    <constraint firstAttribute="height" constant="33" id="JoH-zk-Hqz"/>
+                                    <constraint firstAttribute="bottom" secondItem="FNG-YB-Mrr" secondAttribute="bottom" id="ZAW-hD-Eq2"/>
+                                    <constraint firstAttribute="trailing" secondItem="FNG-YB-Mrr" secondAttribute="trailing" id="iQ0-kp-EOV"/>
+                                    <constraint firstItem="FNG-YB-Mrr" firstAttribute="leading" secondItem="tk7-l4-X46" secondAttribute="leading" id="iiD-1x-tmC"/>
+                                    <constraint firstItem="FNG-YB-Mrr" firstAttribute="top" secondItem="tk7-l4-X46" secondAttribute="top" id="qhF-iQ-HQc"/>
+                                    <constraint firstAttribute="trailing" secondItem="FNG-YB-Mrr" secondAttribute="trailing" constant="-3929" id="tns-hc-6P4"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="hmT-jB-Gwz"/>
+                                        <exclude reference="iQ0-kp-EOV"/>
                                     </mask>
                                 </variation>
                             </scrollView>
@@ -99,8 +59,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="SAL-nC-yDG"/>
                     <connections>
-                        <outlet property="label" destination="fvy-qD-zt4" id="LC4-So-bck"/>
                         <outlet property="scrollView" destination="tk7-l4-X46" id="iie-nf-nPj"/>
+                        <outlet property="textView" destination="FNG-YB-Mrr" id="XUG-II-VEO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbt-7R-u4B" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -12,7 +12,7 @@ import Foundation
 class SkillsViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textView: UITextView!
 
     override func viewDidLoad() {
         title = "Skills"
@@ -20,10 +20,11 @@ class SkillsViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        let textWidth = (label.text! as NSString).boundingRectWithSize(label.frame.size,
+        let textWidth = (textView.text! as NSString).boundingRectWithSize(textView.frame.size,
             options: .UsesLineFragmentOrigin,
-            attributes: [NSFontAttributeName: label.font],
+            attributes: [NSFontAttributeName: UIFont(name: "HelveticaNeue-Light", size: 17)!],
             context: nil).size.width
+        textView.contentInset = UIEdgeInsetsZero
         scrollView.contentSize.width = textWidth
         scrollView.contentInset = UIEdgeInsetsZero
     }
