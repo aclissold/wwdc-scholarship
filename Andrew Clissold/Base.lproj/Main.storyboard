@@ -49,7 +49,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-l4-X46">
-                                <rect key="frame" x="44" y="213" width="540" height="33"/>
+                                <rect key="frame" x="216" y="213" width="384" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-YB-Mrr">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -72,7 +72,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                     <constraint firstAttribute="trailing" secondItem="FNG-YB-Mrr" secondAttribute="trailing" id="iQ0-kp-EOV"/>
                                     <constraint firstItem="FNG-YB-Mrr" firstAttribute="leading" secondItem="tk7-l4-X46" secondAttribute="leading" id="iiD-1x-tmC"/>
                                     <constraint firstItem="FNG-YB-Mrr" firstAttribute="top" secondItem="tk7-l4-X46" secondAttribute="top" id="qhF-iQ-HQc"/>
-                                    <constraint firstAttribute="trailing" secondItem="FNG-YB-Mrr" secondAttribute="trailing" constant="-3929" id="tns-hc-6P4"/>
+                                    <constraint firstAttribute="trailing" secondItem="FNG-YB-Mrr" secondAttribute="trailing" constant="-4085" id="tns-hc-6P4"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -83,18 +83,18 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tk7-l4-X46" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="44" id="GPn-UT-7Bq"/>
+                            <constraint firstItem="tk7-l4-X46" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="216" id="GPn-UT-7Bq"/>
                             <constraint firstItem="TLb-2j-Lyo" firstAttribute="leading" secondItem="OKr-kw-b93" secondAttribute="leading" constant="16" id="LxJ-RW-ee3"/>
                             <constraint firstAttribute="trailing" secondItem="TLb-2j-Lyo" secondAttribute="trailing" constant="16" id="OzK-Zk-hBP"/>
                             <constraint firstItem="TLb-2j-Lyo" firstAttribute="top" secondItem="OKr-kw-b93" secondAttribute="top" constant="64" id="VLH-uj-79H"/>
                             <constraint firstItem="FNG-YB-Mrr" firstAttribute="top" secondItem="TLb-2j-Lyo" secondAttribute="bottom" constant="8" id="WZs-Ff-En0"/>
-                            <constraint firstAttribute="trailing" secondItem="tk7-l4-X46" secondAttribute="trailing" constant="16" id="xxb-cz-QyC"/>
+                            <constraint firstAttribute="trailing" secondItem="tk7-l4-X46" secondAttribute="trailing" id="xxb-cz-QyC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SAL-nC-yDG"/>
                     <connections>
-                        <outlet property="scrollView" destination="tk7-l4-X46" id="iie-nf-nPj"/>
-                        <outlet property="textView" destination="FNG-YB-Mrr" id="XUG-II-VEO"/>
+                        <outletCollection property="scrollViews" destination="tk7-l4-X46" collectionClass="NSMutableArray" id="wiE-Df-gzO"/>
+                        <outletCollection property="textViews" destination="FNG-YB-Mrr" collectionClass="NSMutableArray" id="ZTU-EZ-Vys"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbt-7R-u4B" userLabel="First Responder" sceneMemberID="firstResponder"/>

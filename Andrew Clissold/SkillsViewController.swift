@@ -11,8 +11,8 @@ import Foundation
 
 class SkillsViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet var scrollViews: [UIScrollView]!
+    @IBOutlet var textViews: [UITextView]!
 
     override func viewDidLoad() {
         title = "Skills"
@@ -20,13 +20,19 @@ class SkillsViewController: UIViewController {
     }
 
     override func viewDidAppear(animated: Bool) {
-        let textWidth = (textView.text! as NSString).boundingRectWithSize(textView.frame.size,
-            options: .UsesLineFragmentOrigin,
-            attributes: [NSFontAttributeName: UIFont(name: "Menlo", size: 14)!],
-            context: nil).size.width
-        textView.contentInset = UIEdgeInsetsZero
-        scrollView.contentSize.width = textWidth
-        scrollView.contentInset = UIEdgeInsetsZero
+        setUpHorizontalScrollViews()
+    }
+
+    func setUpHorizontalScrollViews() {
+        for i in 0..<count(scrollViews) {
+            let textWidth = (textViews[i].text! as NSString).boundingRectWithSize(textViews[i].frame.size,
+                options: .UsesLineFragmentOrigin,
+                attributes: [NSFontAttributeName: UIFont(name: "Menlo", size: 14)!],
+                context: nil).size.width
+            textViews[i].contentInset = UIEdgeInsetsZero
+            scrollViews[i].contentSize.width = textWidth
+            scrollViews[i].contentInset = UIEdgeInsetsZero
+        }
     }
 
     func done(sender: UIBarButtonItem) {
