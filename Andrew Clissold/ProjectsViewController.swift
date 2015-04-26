@@ -23,7 +23,7 @@ class ProjectsViewController: UIViewController {
         dataSource.oaklandPostViewController = storyboard!.instantiateViewControllerWithIdentifier("OaklandPostViewController") as! UIViewController
         dataSource.typeOneTwoViewController = storyboard!.instantiateViewControllerWithIdentifier("TypeOneTwoViewController") as! UIViewController
 
-        pageViewController = storyboard!.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
+        pageViewController = storyboard!.instantiateViewControllerWithIdentifier("ProjectsPageViewController") as! UIPageViewController
         pageViewController.setViewControllers([dataSource.initialViewController], direction: .Forward, animated: true, completion: nil)
         pageViewController.dataSource = dataSource
         addChildViewController(pageViewController)

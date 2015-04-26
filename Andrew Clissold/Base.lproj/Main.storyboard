@@ -754,7 +754,7 @@ Cg
         <!--Page View Controller-->
         <scene sceneID="RF8-nI-eLx">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="BI7-MJ-CnK" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="ProjectsPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="BI7-MJ-CnK" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sNw-HZ-ggT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="580" y="2579"/>
@@ -784,6 +784,104 @@ Cg
                 <exit id="AAO-sJ-h2S" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1981" y="429"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="KC8-Jt-dv5">
+            <objects>
+                <pageViewController storyboardIdentifier="BackgroundPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="nMK-YW-DuN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2TQ-By-Wip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2690" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vEP-Aa-cOm">
+            <objects>
+                <viewController storyboardIdentifier="OaklandUniversityViewController" id="9BD-xu-4yo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YFE-yh-tZ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="qyL-Aa-DS3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YS3-jC-H1T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oakland University" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6P-ev-FsS">
+                                <rect key="frame" x="228" y="289" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="O6P-ev-FsS" secondAttribute="centerY" id="6Hb-Iz-Uwi"/>
+                            <constraint firstAttribute="centerX" secondItem="O6P-ev-FsS" secondAttribute="centerX" id="Jqy-qU-Mf1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4D-uS-m6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418" y="-295"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b8s-Ca-lrH">
+            <objects>
+                <viewController storyboardIdentifier="IBMDesignViewController" id="UTw-tp-RVJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v2A-fU-7sE"/>
+                        <viewControllerLayoutGuide type="bottom" id="tPA-92-YUl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nwn-7f-Nox">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBM Design" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxQ-ZX-Thc">
+                                <rect key="frame" x="256" y="289" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="PxQ-ZX-Thc" secondAttribute="centerY" id="AI0-RP-LlC"/>
+                            <constraint firstAttribute="centerX" secondItem="PxQ-ZX-Thc" secondAttribute="centerX" id="aAx-ub-UD5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cy-iR-R06" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z0v-e7-yiJ">
+            <objects>
+                <viewController storyboardIdentifier="DominosViewController" id="bBD-rc-gQ3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z3a-vV-pGx"/>
+                        <viewControllerLayoutGuide type="bottom" id="c7m-92-OUe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cvl-XN-9lH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domino’s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-Ix-Jiy">
+                                <rect key="frame" x="264" y="289" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="u4j-Ix-Jiy" secondAttribute="centerX" id="hQd-Ya-kea"/>
+                            <constraint firstAttribute="centerY" secondItem="u4j-Ix-Jiy" secondAttribute="centerY" id="mRW-Mg-XYa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDf-eZ-OTJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418" y="1135"/>
         </scene>
         <!--Portrait Navigation Controller-->
         <scene sceneID="wgW-JO-UA1">
