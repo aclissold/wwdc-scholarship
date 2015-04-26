@@ -39,7 +39,12 @@ class InterestsViewController: UIViewController  {
         } else if audioPlayers.brassQuartetPlayerPlaying {
             brassQuartetPlayPauseButton.setImage(UIImage(named: "Pause"), forState: .Normal)
         }
-   }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "done:")
+    }
+
+    func done(sender: UIBarButtonItem) {
+        navigationController?.performSegueWithIdentifier("unwindFromInterests", sender: self)
+    }
 
     func theme() {
         for button in pieceButtons {

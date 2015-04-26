@@ -16,6 +16,11 @@ class BackgroundViewController: UIViewController {
     override func viewDidLoad() {
         title = "Background"
         setUpPageViewController()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "done:")
+    }
+
+    func done(sender: UIBarButtonItem) {
+        navigationController?.performSegueWithIdentifier("unwindFromBackground", sender: self)
     }
 
     func setUpPageViewController() {

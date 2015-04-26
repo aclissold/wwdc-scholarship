@@ -128,20 +128,33 @@ class MainViewController: UIViewController {
         return UIStoryboardSegue(identifier: identifier, source: fromViewController, destination: toViewController) {
             let fromView = fromViewController.view
             let toView = toViewController.view
+            let fromRotation: CGAffineTransform
+            let toRotation = CGAffineTransformMakeRotation(CGFloat(0))
+            switch identifier {
+                case .Some("unwindFromProjects"):
+                    fromRotation = CGAffineTransformMakeRotation(CGFloat(0))
+                case .Some("unwindFromInterests"):
+                    fromRotation = CGAffineTransformMakeRotation(CGFloat(3*M_PI_2))
+                case .Some("unwindFromSkills"):
+                    fromRotation = CGAffineTransformMakeRotation(CGFloat(M_PI))
+                case .Some("unwindFromBackground"):
+                    fromRotation = CGAffineTransformMakeRotation(CGFloat(M_PI_2))
+                default:
+                    fatalError("unknown segue identifier: \(identifier)")
+            }
+
             if let containerView = fromView.superview {
                 let initialFrame = fromView.frame
                 var offscreenRect = initialFrame
                 offscreenRect.origin.y = initialFrame.size.height
-                toView.frame = initialFrame
                 containerView.insertSubview(toView, belowSubview: fromView)
-                var rotation = CGAffineTransformMakeRotation(CGFloat(M_PI))
-                toView.layer.transform = CATransform3DMakeAffineTransform(rotation)
+                toView.layer.transform = CATransform3DMakeAffineTransform(fromRotation)
+                toView.frame = initialFrame
 
                 UIView.animateWithDuration(0.4, delay: 0, options: .CurveEaseIn, animations: {
                         fromView.frame = offscreenRect
                     }, completion: { finished in
-                        rotation = CGAffineTransformMakeRotation(CGFloat(0))
-                        toView.layer.transform = CATransform3DMakeAffineTransform(rotation)
+                        toView.layer.transform = CATransform3DMakeAffineTransform(toRotation)
                         fromViewController.dismissViewControllerAnimated(false, completion: nil)
                 })
 

@@ -16,6 +16,11 @@ class ProjectsViewController: UIViewController {
     override func viewDidLoad() {
         title = "Projects"
         setUpPageViewController()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "done:")
+    }
+
+    func done(sender: UIBarButtonItem) {
+        navigationController?.performSegueWithIdentifier("unwindFromProjects", sender: self)
     }
 
     func setUpPageViewController() {
