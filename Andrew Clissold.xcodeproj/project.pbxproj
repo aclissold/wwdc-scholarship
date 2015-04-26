@@ -29,6 +29,7 @@
 		B5CE8FDF1AEC6E3200189DE0 /* Grave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FDA1AEC6E3200189DE0 /* Grave.mp3 */; };
 		B5CE8FE01AEC6E3200189DE0 /* Grave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */; };
 		B5CE8FE21AEC707B00189DE0 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */; };
+		B5CE8FE41AEC920B00189DE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE8FE31AEC920B00189DE0 /* Constants.swift */; };
 		B5E0BBC61AE9D59E00218693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		B5CE8FDA1AEC6E3200189DE0 /* Grave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grave.mp3; sourceTree = "<group>"; };
 		B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Grave.pdf; sourceTree = "<group>"; };
 		B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		B5CE8FE31AEC920B00189DE0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B549E8981AE5C2E400946B5F /* AppDelegate.swift */,
+				B5CE8FE31AEC920B00189DE0 /* Constants.swift */,
 				B549E89A1AE5C2E400946B5F /* MainViewController.swift */,
 				B5C0F8D11AEC3F1100A8E680 /* Projects */,
 				B5CE8FD61AEC6E0D00189DE0 /* Interests */,
@@ -238,6 +241,7 @@
 				B549E8991AE5C2E400946B5F /* AppDelegate.swift in Sources */,
 				B5C0F8D91AEC40B400A8E680 /* LinkViewController.swift in Sources */,
 				B59EDEFB1AEC1D7400601D43 /* ProjectsDataSource.swift in Sources */,
+				B5CE8FE41AEC920B00189DE0 /* Constants.swift in Sources */,
 				B59833C51AE7295800809D03 /* LandscapeRightNavigation.swift in Sources */,
 				B59833C11AE7278800809D03 /* InterestsViewController.swift in Sources */,
 			);
