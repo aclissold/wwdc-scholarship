@@ -43,7 +43,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAI-5N-y4u">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAI-5N-y4u">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tve-DA-i8i">
-                                <rect key="frame" x="235" y="559" width="131" height="33"/>
+                                <rect key="frame" x="216" y="559" width="131" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="“Brass Quartet?”">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,16 +96,6 @@
                                     <segue destination="rnH-1P-2oX" kind="show" identifier="showGravePDF" id="ZSZ-G0-tgx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-4t-HZB">
-                                <rect key="frame" x="525" y="559" width="59" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="“Haiku”">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="rnH-1P-2oX" kind="show" identifier="showHaikuPDF" id="hId-U1-H9y"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-O3-h5T">
                                 <rect key="frame" x="16" y="64" width="568" height="171"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -116,37 +106,58 @@
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B1-tG-xmQ">
-                                <rect key="frame" x="260" y="521" width="30" height="30"/>
-                                <state key="normal" title="Play">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B1-tG-xmQ">
+                                <rect key="frame" x="85" y="561" width="30" height="30"/>
+                                <state key="normal" image="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="play:" destination="b1B-h5-hyg" eventType="touchUpInside" id="XEX-pe-uGb"/>
+                                    <action selector="playPause:" destination="b1B-h5-hyg" eventType="touchUpInside" id="Rvj-Ma-ZFr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-HY-jM8">
-                                <rect key="frame" x="298" y="521" width="43" height="30"/>
-                                <state key="normal" title="Pause">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-lA-ND7">
+                                <rect key="frame" x="355" y="561" width="30" height="30"/>
+                                <state key="normal" image="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="pause:" destination="b1B-h5-hyg" eventType="touchUpInside" id="y9j-JA-kKp"/>
+                                    <action selector="playPause:" destination="b1B-h5-hyg" eventType="touchUpInside" id="yeK-AF-Yhl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiW-UV-tR7">
+                                <rect key="frame" x="554" y="561" width="30" height="30"/>
+                                <state key="normal" image="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playPause:" destination="b1B-h5-hyg" eventType="touchUpInside" id="fbE-30-j73"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-4t-HZB">
+                                <rect key="frame" x="487" y="559" width="59" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="“Haiku”">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rnH-1P-2oX" kind="show" identifier="showHaikuPDF" id="hId-U1-H9y"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="PiW-UV-tR7" firstAttribute="trailing" secondItem="5oX-kA-Rmd" secondAttribute="trailingMargin" id="75N-SS-EbZ"/>
                             <constraint firstItem="f6k-QZ-DHe" firstAttribute="leading" secondItem="5oX-kA-Rmd" secondAttribute="leadingMargin" id="7gc-tX-QCO"/>
                             <constraint firstItem="ce0-vl-6Di" firstAttribute="top" secondItem="Tve-DA-i8i" secondAttribute="bottom" constant="8" id="APW-tf-pT5"/>
+                            <constraint firstItem="HbV-lA-ND7" firstAttribute="leading" secondItem="Tve-DA-i8i" secondAttribute="trailing" constant="8" id="EbX-wb-jnH"/>
                             <constraint firstItem="ce0-vl-6Di" firstAttribute="top" secondItem="FPg-4t-HZB" secondAttribute="bottom" constant="8" id="Ods-EL-RC1"/>
-                            <constraint firstItem="Tve-DA-i8i" firstAttribute="top" secondItem="5B1-tG-xmQ" secondAttribute="bottom" constant="8" id="TJh-wI-r2Z"/>
-                            <constraint firstAttribute="centerX" secondItem="Tve-DA-i8i" secondAttribute="centerX" id="YAE-xi-Aps"/>
-                            <constraint firstAttribute="centerX" secondItem="5B1-tG-xmQ" secondAttribute="centerX" constant="25" id="afR-Ox-3t4"/>
-                            <constraint firstItem="FPg-4t-HZB" firstAttribute="trailing" secondItem="5oX-kA-Rmd" secondAttribute="trailingMargin" id="dvu-fF-BR7"/>
-                            <constraint firstItem="Tve-DA-i8i" firstAttribute="top" secondItem="ihO-HY-jM8" secondAttribute="bottom" constant="8" id="eZP-qq-Y7O"/>
+                            <constraint firstItem="5B1-tG-xmQ" firstAttribute="centerY" secondItem="f6k-QZ-DHe" secondAttribute="centerY" constant="0.5" id="RDF-8U-hdo"/>
+                            <constraint firstItem="PiW-UV-tR7" firstAttribute="centerY" secondItem="FPg-4t-HZB" secondAttribute="centerY" constant="0.5" id="RLO-1a-E1f"/>
+                            <constraint firstItem="PiW-UV-tR7" firstAttribute="leading" secondItem="FPg-4t-HZB" secondAttribute="trailing" constant="8" id="WhQ-8z-EI6"/>
+                            <constraint firstAttribute="centerX" secondItem="Tve-DA-i8i" secondAttribute="centerX" constant="18.5" id="YAE-xi-Aps"/>
+                            <constraint firstItem="Tve-DA-i8i" firstAttribute="centerY" secondItem="HbV-lA-ND7" secondAttribute="centerY" constant="-0.5" id="fMb-OE-ZbN"/>
                             <constraint firstItem="fNm-O3-h5T" firstAttribute="trailing" secondItem="5oX-kA-Rmd" secondAttribute="trailingMargin" id="i6E-Eb-l9I"/>
-                            <constraint firstItem="ihO-HY-jM8" firstAttribute="leading" secondItem="5B1-tG-xmQ" secondAttribute="trailing" constant="8" id="tlf-TR-KaO"/>
+                            <constraint firstItem="5B1-tG-xmQ" firstAttribute="leading" secondItem="f6k-QZ-DHe" secondAttribute="trailing" constant="8" id="qkp-gy-zu0"/>
                             <constraint firstItem="fNm-O3-h5T" firstAttribute="top" secondItem="szS-HE-wJ2" secondAttribute="bottom" id="xL3-Cb-aJI"/>
                             <constraint firstItem="ce0-vl-6Di" firstAttribute="top" secondItem="f6k-QZ-DHe" secondAttribute="bottom" constant="8" id="xo8-yN-KvZ"/>
                             <constraint firstItem="fNm-O3-h5T" firstAttribute="leading" secondItem="5oX-kA-Rmd" secondAttribute="leadingMargin" id="ywi-y7-VJM"/>
@@ -160,6 +171,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="brassQuartetPlayPauseButton" destination="HbV-lA-ND7" id="v9X-ms-LLE"/>
+                        <outlet property="gravePlayPauseButton" destination="5B1-tG-xmQ" id="jDi-eD-aQC"/>
+                        <outlet property="haikuPlayPauseButton" destination="PiW-UV-tR7" id="AO6-l1-Zdp"/>
                         <outletCollection property="pieceButtons" destination="f6k-QZ-DHe" collectionClass="NSMutableArray" id="JtZ-dW-9Cb"/>
                         <outletCollection property="pieceButtons" destination="Tve-DA-i8i" collectionClass="NSMutableArray" id="GgA-gR-MfF"/>
                         <outletCollection property="pieceButtons" destination="FPg-4t-HZB" collectionClass="NSMutableArray" id="zx9-N9-Sjg"/>
@@ -871,6 +885,7 @@ Cg
         </scene>
     </scenes>
     <resources>
+        <image name="Play" width="30" height="30"/>
         <image name="Spam Logo" width="350" height="145"/>
         <image name="TypeOneTwo Graph" width="320" height="228"/>
     </resources>
