@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLb-2j-Lyo">
-                                <rect key="frame" x="16" y="64" width="568" height="141"/>
+                                <rect key="frame" x="16" y="54" width="568" height="141"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">My number one skill is my ability to learn. This complements my love for learning incredibly well—the two go hand in hand, and the more I learn, the more I love to learn.
@@ -49,7 +49,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-l4-X46">
-                                <rect key="frame" x="216" y="213" width="384" height="33"/>
+                                <rect key="frame" x="216" y="195" width="384" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-YB-Mrr">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -81,7 +81,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOH-Is-GBz">
-                                <rect key="frame" x="216" y="246" width="384" height="33"/>
+                                <rect key="frame" x="216" y="228" width="384" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-ed-TP6">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -113,7 +113,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eO-TT-PdD">
-                                <rect key="frame" x="216" y="279" width="384" height="33"/>
+                                <rect key="frame" x="216" y="261" width="384" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYZ-4b-yRc">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -145,7 +145,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HM-dg-O6V">
-                                <rect key="frame" x="108" y="312" width="492" height="33"/>
+                                <rect key="frame" x="108" y="294" width="492" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-32-sfG">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -177,7 +177,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-Bp-fkW">
-                                <rect key="frame" x="108" y="345" width="492" height="33"/>
+                                <rect key="frame" x="108" y="327" width="492" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-Uf-86P">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -209,7 +209,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdP-zF-kIF">
-                                <rect key="frame" x="108" y="378" width="492" height="33"/>
+                                <rect key="frame" x="108" y="360" width="492" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJ8-5C-nLW">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -241,7 +241,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGv-it-5lZ">
-                                <rect key="frame" x="108" y="411" width="492" height="33"/>
+                                <rect key="frame" x="108" y="393" width="492" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHu-LW-4WE">
                                         <rect key="frame" x="0.0" y="0.0" width="4469" height="33"/>
@@ -286,8 +286,8 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I </stri
                             <constraint firstAttribute="trailing" secondItem="TLb-2j-Lyo" secondAttribute="trailing" constant="16" id="OzK-Zk-hBP"/>
                             <constraint firstItem="xdP-zF-kIF" firstAttribute="top" secondItem="kQT-Bp-fkW" secondAttribute="bottom" id="QBZ-pR-Git"/>
                             <constraint firstAttribute="trailing" secondItem="xdP-zF-kIF" secondAttribute="trailing" id="U6q-Ib-ZVk"/>
-                            <constraint firstItem="TLb-2j-Lyo" firstAttribute="top" secondItem="OKr-kw-b93" secondAttribute="top" constant="64" id="VLH-uj-79H"/>
-                            <constraint firstItem="FNG-YB-Mrr" firstAttribute="top" secondItem="TLb-2j-Lyo" secondAttribute="bottom" constant="8" id="WZs-Ff-En0"/>
+                            <constraint firstItem="TLb-2j-Lyo" firstAttribute="top" secondItem="OKr-kw-b93" secondAttribute="top" constant="54" id="VLH-uj-79H"/>
+                            <constraint firstItem="FNG-YB-Mrr" firstAttribute="top" secondItem="TLb-2j-Lyo" secondAttribute="bottom" id="WZs-Ff-En0"/>
                             <constraint firstItem="kQT-Bp-fkW" firstAttribute="top" secondItem="9HM-dg-O6V" secondAttribute="bottom" id="Zld-nM-uWU"/>
                             <constraint firstAttribute="trailing" secondItem="kQT-Bp-fkW" secondAttribute="trailing" id="cLl-rX-3Cc"/>
                             <constraint firstItem="9HM-dg-O6V" firstAttribute="top" secondItem="8eO-TT-PdD" secondAttribute="bottom" id="gay-GE-7xv"/>
