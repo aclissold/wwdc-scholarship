@@ -204,8 +204,8 @@
                                 <rect key="frame" x="185" y="185" width="230" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-DE-O2S">
-                                        <rect key="frame" x="35" y="94" width="161" height="41"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                        <rect key="frame" x="15" y="91" width="201" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                         <state key="normal" title="Andrew Clissold">
                                             <color key="titleColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -242,16 +242,16 @@
                                     <constraint firstAttribute="height" constant="230" id="0HD-kw-iRD"/>
                                     <constraint firstAttribute="centerY" secondItem="d1T-DE-O2S" secondAttribute="centerY" constant="0.5" id="1Fv-e3-990"/>
                                     <constraint firstAttribute="centerX" secondItem="d1T-DE-O2S" secondAttribute="centerX" id="9a6-VP-eZa"/>
-                                    <constraint firstItem="d1T-DE-O2S" firstAttribute="top" secondItem="dix-gr-d1r" secondAttribute="bottom" constant="18" id="D8N-fT-t6D"/>
+                                    <constraint firstItem="d1T-DE-O2S" firstAttribute="top" secondItem="dix-gr-d1r" secondAttribute="bottom" constant="15" id="D8N-fT-t6D"/>
                                     <constraint firstItem="L4T-Vq-1cL" firstAttribute="centerX" secondItem="d1T-DE-O2S" secondAttribute="centerX" constant="-0.5" id="Nun-BM-DYx"/>
-                                    <constraint firstItem="L4T-Vq-1cL" firstAttribute="top" secondItem="d1T-DE-O2S" secondAttribute="bottom" constant="18" id="Yv2-ld-gvl"/>
+                                    <constraint firstItem="L4T-Vq-1cL" firstAttribute="top" secondItem="d1T-DE-O2S" secondAttribute="bottom" constant="14" id="Yv2-ld-gvl"/>
                                     <constraint firstItem="d1T-DE-O2S" firstAttribute="centerX" secondItem="dix-gr-d1r" secondAttribute="centerX" id="dMB-r1-yDH"/>
                                     <constraint firstAttribute="width" constant="230" id="kjj-Qr-vjv"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-TV-cmP">
-                                <rect key="frame" x="272" y="562" width="56" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="270" y="559" width="60" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="Projects">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -261,8 +261,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-0b-pzU">
-                                <rect key="frame" x="500" y="285" width="84" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="494" y="284" width="90" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="Background">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -272,8 +272,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-DH-KPk">
-                                <rect key="frame" x="16" y="285" width="59" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="16" y="284" width="63" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="Interests">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -283,8 +283,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XG-jd-UI1">
-                                <rect key="frame" x="282" y="28" width="36" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <rect key="frame" x="282" y="28" width="37" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <state key="normal" title="Skills">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
