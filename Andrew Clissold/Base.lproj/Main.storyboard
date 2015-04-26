@@ -31,6 +31,39 @@
             </objects>
             <point key="canvasLocation" x="580" y="-991"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Zve-y5-KN5">
+            <objects>
+                <viewController id="rnH-1P-2oX" customClass="PDFViewController" customModule="Andrew_Clissold" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UzS-zK-ffQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RMJ-eC-AKs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="52p-wx-nhg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAI-5N-y4u">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="EAI-5N-y4u" secondAttribute="bottom" id="1Xd-Yi-Ixv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EAI-5N-y4u" secondAttribute="trailing" constant="-16" id="LwA-1b-Zxj"/>
+                            <constraint firstItem="EAI-5N-y4u" firstAttribute="leading" secondItem="52p-wx-nhg" secondAttribute="leadingMargin" constant="-16" id="sI0-3y-ibU"/>
+                            <constraint firstItem="EAI-5N-y4u" firstAttribute="top" secondItem="UzS-zK-ffQ" secondAttribute="bottom" id="x39-pN-BLk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="EAI-5N-y4u" id="UYJ-04-geS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RzR-ec-Rag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1568" y="429"/>
+        </scene>
         <!--Interests View Controller-->
         <scene sceneID="JZc-6H-v8z">
             <objects>
@@ -42,7 +75,44 @@
                     <view key="view" contentMode="scaleToFill" id="5oX-kA-Rmd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tve-DA-i8i">
+                                <rect key="frame" x="248" y="285" width="104" height="30"/>
+                                <state key="normal" title="Brass Quartet?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rnH-1P-2oX" kind="show" identifier="showBrassQuartet?PDF" id="7Ie-Sa-kdU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6k-QZ-DHe">
+                                <rect key="frame" x="280" y="247" width="41" height="30"/>
+                                <state key="normal" title="Grave">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rnH-1P-2oX" kind="show" identifier="showGravePDF" id="ZSZ-G0-tgx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-4t-HZB">
+                                <rect key="frame" x="280" y="323" width="40" height="30"/>
+                                <state key="normal" title="Haiku">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rnH-1P-2oX" kind="show" identifier="showHaikuPDF" id="hId-U1-H9y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="f6k-QZ-DHe" secondAttribute="centerX" id="4O5-el-eti"/>
+                            <constraint firstAttribute="centerY" secondItem="Tve-DA-i8i" secondAttribute="centerY" id="A76-LI-qrt"/>
+                            <constraint firstItem="Tve-DA-i8i" firstAttribute="top" secondItem="f6k-QZ-DHe" secondAttribute="bottom" constant="8" id="HTL-MO-WEH"/>
+                            <constraint firstAttribute="centerX" secondItem="Tve-DA-i8i" secondAttribute="centerX" id="aAY-GE-m4T"/>
+                            <constraint firstItem="FPg-4t-HZB" firstAttribute="top" secondItem="Tve-DA-i8i" secondAttribute="bottom" constant="8" id="aME-UB-EZO"/>
+                            <constraint firstAttribute="centerX" secondItem="FPg-4t-HZB" secondAttribute="centerX" id="sxF-IK-hqZ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7er-6y-yAE">
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="G8S-2a-e76">
@@ -684,4 +754,7 @@ Cg
         <image name="Spam Logo" width="350" height="145"/>
         <image name="TypeOneTwo Graph" width="320" height="228"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZSZ-G0-tgx"/>
+    </inferredMetricsTieBreakers>
 </document>

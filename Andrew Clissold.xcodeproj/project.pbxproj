@@ -22,6 +22,13 @@
 		B59833CC1AE72B4E00809D03 /* PortraitNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59833CB1AE72B4E00809D03 /* PortraitNavigationController.swift */; };
 		B59EDEFB1AEC1D7400601D43 /* ProjectsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59EDEFA1AEC1D7400601D43 /* ProjectsDataSource.swift */; };
 		B5C0F8D91AEC40B400A8E680 /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0F8D81AEC40B400A8E680 /* LinkViewController.swift */; };
+		B5CE8FD51AEC64A700189DE0 /* Haiku.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FD41AEC64A700189DE0 /* Haiku.pdf */; };
+		B5CE8FDC1AEC6E3200189DE0 /* Brass Quartet?.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FD71AEC6E3200189DE0 /* Brass Quartet?.mp3 */; };
+		B5CE8FDD1AEC6E3200189DE0 /* Haiku.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FD81AEC6E3200189DE0 /* Haiku.mp4 */; };
+		B5CE8FDE1AEC6E3200189DE0 /* Brass Quartet?.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FD91AEC6E3200189DE0 /* Brass Quartet?.pdf */; };
+		B5CE8FDF1AEC6E3200189DE0 /* Grave.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FDA1AEC6E3200189DE0 /* Grave.mp3 */; };
+		B5CE8FE01AEC6E3200189DE0 /* Grave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */; };
+		B5CE8FE21AEC707B00189DE0 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */; };
 		B5E0BBC61AE9D59E00218693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +50,13 @@
 		B59833CB1AE72B4E00809D03 /* PortraitNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitNavigationController.swift; sourceTree = "<group>"; };
 		B59EDEFA1AEC1D7400601D43 /* ProjectsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsDataSource.swift; sourceTree = "<group>"; };
 		B5C0F8D81AEC40B400A8E680 /* LinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
+		B5CE8FD41AEC64A700189DE0 /* Haiku.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Haiku.pdf; sourceTree = "<group>"; };
+		B5CE8FD71AEC6E3200189DE0 /* Brass Quartet?.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Brass Quartet?.mp3"; sourceTree = "<group>"; };
+		B5CE8FD81AEC6E3200189DE0 /* Haiku.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Haiku.mp4; sourceTree = "<group>"; };
+		B5CE8FD91AEC6E3200189DE0 /* Brass Quartet?.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Brass Quartet?.pdf"; sourceTree = "<group>"; };
+		B5CE8FDA1AEC6E3200189DE0 /* Grave.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Grave.mp3; sourceTree = "<group>"; };
+		B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Grave.pdf; sourceTree = "<group>"; };
+		B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -81,7 +95,7 @@
 				B549E8981AE5C2E400946B5F /* AppDelegate.swift */,
 				B549E89A1AE5C2E400946B5F /* MainViewController.swift */,
 				B5C0F8D11AEC3F1100A8E680 /* Projects */,
-				B59833C01AE7278800809D03 /* InterestsViewController.swift */,
+				B5CE8FD61AEC6E0D00189DE0 /* Interests */,
 				B59833BE1AE7278100809D03 /* SkillsViewController.swift */,
 				B59833BC1AE7277900809D03 /* BackgroundViewController.swift */,
 				B59833CA1AE72B2900809D03 /* Orientation Navigation Controllers */,
@@ -120,6 +134,21 @@
 				B5C0F8D81AEC40B400A8E680 /* LinkViewController.swift */,
 			);
 			name = Projects;
+			sourceTree = "<group>";
+		};
+		B5CE8FD61AEC6E0D00189DE0 /* Interests */ = {
+			isa = PBXGroup;
+			children = (
+				B59833C01AE7278800809D03 /* InterestsViewController.swift */,
+				B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */,
+				B5CE8FDA1AEC6E3200189DE0 /* Grave.mp3 */,
+				B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */,
+				B5CE8FD71AEC6E3200189DE0 /* Brass Quartet?.mp3 */,
+				B5CE8FD91AEC6E3200189DE0 /* Brass Quartet?.pdf */,
+				B5CE8FD81AEC6E3200189DE0 /* Haiku.mp4 */,
+				B5CE8FD41AEC64A700189DE0 /* Haiku.pdf */,
+			);
+			name = Interests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +208,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5CE8FDD1AEC6E3200189DE0 /* Haiku.mp4 in Resources */,
+				B5CE8FE01AEC6E3200189DE0 /* Grave.pdf in Resources */,
+				B5CE8FDC1AEC6E3200189DE0 /* Brass Quartet?.mp3 in Resources */,
+				B5CE8FDE1AEC6E3200189DE0 /* Brass Quartet?.pdf in Resources */,
 				B549E89E1AE5C2E400946B5F /* Main.storyboard in Resources */,
+				B5CE8FDF1AEC6E3200189DE0 /* Grave.mp3 in Resources */,
 				B549E8A31AE5C2E400946B5F /* LaunchScreen.xib in Resources */,
 				B549E8A01AE5C2E400946B5F /* Images.xcassets in Resources */,
+				B5CE8FD51AEC64A700189DE0 /* Haiku.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +230,7 @@
 				B59833C31AE7279200809D03 /* ProjectsViewController.swift in Sources */,
 				B59833C91AE72A1900809D03 /* PortraitUpsideDownNavigationController.swift in Sources */,
 				B59833CC1AE72B4E00809D03 /* PortraitNavigationController.swift in Sources */,
+				B5CE8FE21AEC707B00189DE0 /* PDFViewController.swift in Sources */,
 				B59833BD1AE7277900809D03 /* BackgroundViewController.swift in Sources */,
 				B549E89B1AE5C2E400946B5F /* MainViewController.swift in Sources */,
 				B59833BF1AE7278100809D03 /* SkillsViewController.swift in Sources */,

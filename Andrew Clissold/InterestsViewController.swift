@@ -10,6 +10,12 @@ import UIKit
 
 class InterestsViewController: UIViewController {
 
+    let PDFs = [
+        "showGravePDF": "Grave",
+        "showBrassQuartet?PDF": "Brass Quartet?",
+        "showHaikuPDF": "Haiku"
+    ]
+
     override func viewDidLoad() {
         title = "Interests"
     }
@@ -24,6 +30,13 @@ class InterestsViewController: UIViewController {
 
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return .LandscapeRight
+    }
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let identifier = segue.identifier {
+            let viewController = segue.destinationViewController as! PDFViewController
+            viewController.piece = PDFs[identifier]
+        }
     }
 
 }
