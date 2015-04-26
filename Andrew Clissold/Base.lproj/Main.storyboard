@@ -182,7 +182,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CFA-ub-YUs">
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFA-ub-YUs">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -236,8 +236,8 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-TV-cmP">
-                                <rect key="frame" x="270" y="559" width="60" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <rect key="frame" x="269" y="559" width="63" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Projects">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -247,8 +247,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-0b-pzU">
-                                <rect key="frame" x="494" y="284" width="90" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <rect key="frame" x="490" y="284" width="94" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Background">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -258,8 +258,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-DH-KPk">
-                                <rect key="frame" x="16" y="284" width="63" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <rect key="frame" x="16" y="284" width="66" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Interests">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -269,8 +269,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XG-jd-UI1">
-                                <rect key="frame" x="282" y="28" width="37" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <rect key="frame" x="280" y="28" width="41" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Skills">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -282,13 +282,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CFA-ub-YUs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="3cj-Z8-spR"/>
                             <constraint firstItem="5XG-jd-UI1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="7m6-Zi-OyT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CFA-ub-YUs" secondAttribute="bottom" id="EC1-Jq-VyA"/>
                             <constraint firstAttribute="centerY" secondItem="wPm-0b-pzU" secondAttribute="centerY" id="FaG-lh-lRJ"/>
                             <constraint firstAttribute="centerY" secondItem="mvH-DH-KPk" secondAttribute="centerY" id="FzB-pe-9Jp"/>
                             <constraint firstAttribute="centerX" secondItem="UD4-TV-cmP" secondAttribute="centerX" id="KyE-HY-f0M"/>
                             <constraint firstAttribute="centerX" secondItem="2zK-vW-fGF" secondAttribute="centerX" id="U6x-ch-5Zx"/>
+                            <constraint firstItem="CFA-ub-YUs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Zig-Lp-f05"/>
                             <constraint firstAttribute="centerX" secondItem="5XG-jd-UI1" secondAttribute="centerX" id="fNn-21-amA"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UD4-TV-cmP" secondAttribute="bottom" constant="8" id="gKV-m4-SEg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CFA-ub-YUs" secondAttribute="trailing" constant="-16" id="hof-Kw-A3a"/>
                             <constraint firstItem="wPm-0b-pzU" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="iJN-QX-ekv"/>
                             <constraint firstItem="mvH-DH-KPk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pPW-cG-cWO"/>
                             <constraint firstAttribute="centerY" secondItem="2zK-vW-fGF" secondAttribute="centerY" id="x7b-3g-uEN"/>

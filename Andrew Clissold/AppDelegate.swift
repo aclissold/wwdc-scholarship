@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = andrewClissoldRed
-        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: andrewClissoldRed,
-            NSFontAttributeName: UIFont(name: "HelveticaNeue-Light", size: 17)!]
+        navigationBarAppearance.titleTextAttributes = [//NSForegroundColorAttributeName: andrewClissoldRed,
+            NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 17)!]
 
         let pageControlAppearance = UIPageControl.appearance()
         pageControlAppearance.currentPageIndicatorTintColor = andrewClissoldRed
