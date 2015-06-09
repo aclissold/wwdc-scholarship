@@ -20,7 +20,7 @@ class PDFViewController: UIViewController {
 
     func showPDF() {
         let path = NSBundle.mainBundle().pathForResource(piece, ofType: "pdf")!
-        let URL = NSURL(fileURLWithPath: path)!
+        let URL = NSURL(fileURLWithPath: path)
         let request = NSURLRequest(URL: URL)
         webView.loadRequest(request)
     }

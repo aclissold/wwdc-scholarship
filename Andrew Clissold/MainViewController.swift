@@ -62,19 +62,27 @@ class MainViewController: UIViewController {
         }
 
         motionManager.startDeviceMotionUpdatesUsingReferenceFrame(.XArbitraryZVertical, toQueue: motionQueue) { (deviceMotion, error) in
-            let angle = CGFloat(atan2(deviceMotion.gravity.x, deviceMotion.gravity.y) + M_PI)
-            var rotationTransform = CGAffineTransformIdentity
-            rotationTransform = CGAffineTransformRotate(rotationTransform, angle)
-
-            dispatch_async(dispatch_get_main_queue()) {
-                self.contactInfoContainerView.layer.transform = CATransform3DMakeAffineTransform(rotationTransform)
-            }
+            if deviceMotion != nil {
+                let angle = CGFloat(atan2(deviceMotion!.gravity.x, deviceMotion!.gravity.y) + M_PI)
+                var rotationTransform = CGAffineTransformIdentity
+                rotationTransform = CGAffineTransformRotate(rotationTransform, angle)
+                
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.contactInfoContainerView.layer.transform = CATransform3DMakeAffineTransform(rotationTransform)
+                }
+            } // TODO: handle error
         }
     }
 
     func setUpAudioSession() {
-        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
-        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+        } catch _ {
+        }
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch _ {
+        }
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
     }
 
@@ -112,8 +120,8 @@ class MainViewController: UIViewController {
         return true
     }
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .Portrait
     }
 
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {

@@ -56,8 +56,8 @@ class InterestsViewController: UIViewController  {
         return true
     }
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.LandscapeRight.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .LandscapeRight
     }
 
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {

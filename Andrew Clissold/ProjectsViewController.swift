@@ -24,9 +24,9 @@ class ProjectsViewController: UIViewController {
     }
 
     func setUpPageViewController() {
-        dataSource.spamViewController = storyboard!.instantiateViewControllerWithIdentifier("SpamViewController") as! UIViewController
-        dataSource.oaklandPostViewController = storyboard!.instantiateViewControllerWithIdentifier("OaklandPostViewController") as! UIViewController
-        dataSource.typeOneTwoViewController = storyboard!.instantiateViewControllerWithIdentifier("TypeOneTwoViewController") as! UIViewController
+        dataSource.spamViewController = storyboard!.instantiateViewControllerWithIdentifier("SpamViewController") as UIViewController
+        dataSource.oaklandPostViewController = storyboard!.instantiateViewControllerWithIdentifier("OaklandPostViewController") as UIViewController
+        dataSource.typeOneTwoViewController = storyboard!.instantiateViewControllerWithIdentifier("TypeOneTwoViewController") as UIViewController
 
         pageViewController = storyboard!.instantiateViewControllerWithIdentifier("ProjectsPageViewController") as! UIPageViewController
         pageViewController.setViewControllers([dataSource.initialViewController], direction: .Forward, animated: true, completion: nil)
