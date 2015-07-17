@@ -17,6 +17,5 @@ class LandscapeLeftNavigationController: UINavigationController {
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return .LandscapeLeft
     }
-
    
 }
