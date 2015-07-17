@@ -31,8 +31,8 @@ class LinkViewController: UIViewController {
     }
 
     @IBAction func linkButtonPressed(sender: UIBarButtonItem) {
-        if let url = NSURL(string: links[sender.tag]) {
-            UIApplication.sharedApplication().openURL(url)
+        if let URL = NSURL(string: links[sender.tag]) {
+            UIApplication.sharedApplication().openURL(URL)
         }
     }
 
