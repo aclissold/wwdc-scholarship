@@ -13,8 +13,6 @@
 		B549E8A01AE5C2E400946B5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B549E89F1AE5C2E400946B5F /* Images.xcassets */; };
 		B549E8A31AE5C2E400946B5F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B549E8A11AE5C2E400946B5F /* LaunchScreen.xib */; };
 		B554C9A01AED23900040129C /* BackgroundDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B554C99F1AED23900040129C /* BackgroundDataSource.swift */; };
-		B5631CEA1AECADF500800731 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5631CE91AECADF500800731 /* MediaPlayer.framework */; };
-		B5631CEC1AECADFC00800731 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5631CEB1AECADFC00800731 /* AVFoundation.framework */; };
 		B5631CEE1AECB8C900800731 /* HaikuPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5631CED1AECB8C900800731 /* HaikuPlayerViewController.swift */; };
 		B5631CF01AECBC4100800731 /* AudioPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5631CEF1AECBC4100800731 /* AudioPlayers.swift */; };
 		B59833BD1AE7277900809D03 /* BackgroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59833BC1AE7277900809D03 /* BackgroundViewController.swift */; };
@@ -35,7 +33,6 @@
 		B5CE8FE01AEC6E3200189DE0 /* Grave.pdf in Resources */ = {isa = PBXBuildFile; fileRef = B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */; };
 		B5CE8FE21AEC707B00189DE0 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */; };
 		B5CE8FE41AEC920B00189DE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CE8FE31AEC920B00189DE0 /* Constants.swift */; };
-		B5E0BBC61AE9D59E00218693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,8 +44,6 @@
 		B549E89F1AE5C2E400946B5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B549E8A21AE5C2E400946B5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B554C99F1AED23900040129C /* BackgroundDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundDataSource.swift; sourceTree = "<group>"; };
-		B5631CE91AECADF500800731 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
-		B5631CEB1AECADFC00800731 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B5631CED1AECB8C900800731 /* HaikuPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HaikuPlayerViewController.swift; sourceTree = "<group>"; };
 		B5631CEF1AECBC4100800731 /* AudioPlayers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayers.swift; sourceTree = "<group>"; };
 		B59833BC1AE7277900809D03 /* BackgroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +64,6 @@
 		B5CE8FDB1AEC6E3200189DE0 /* Grave.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Grave.pdf; sourceTree = "<group>"; };
 		B5CE8FE11AEC707B00189DE0 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
 		B5CE8FE31AEC920B00189DE0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +71,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5631CEC1AECADFC00800731 /* AVFoundation.framework in Frameworks */,
-				B5631CEA1AECADF500800731 /* MediaPlayer.framework in Frameworks */,
-				B5E0BBC61AE9D59E00218693 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,9 +80,6 @@
 		B549E88A1AE5C2E400946B5F = {
 			isa = PBXGroup;
 			children = (
-				B5631CEB1AECADFC00800731 /* AVFoundation.framework */,
-				B5631CE91AECADF500800731 /* MediaPlayer.framework */,
-				B5E0BBC51AE9D59E00218693 /* CoreMotion.framework */,
 				B549E8951AE5C2E400946B5F /* Andrew Clissold */,
 				B549E8941AE5C2E400946B5F /* Products */,
 			);
