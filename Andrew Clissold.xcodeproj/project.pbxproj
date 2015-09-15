@@ -101,7 +101,7 @@
 				B549E89A1AE5C2E400946B5F /* MainViewController.swift */,
 				B5C0F8D11AEC3F1100A8E680 /* Projects */,
 				B5CE8FD61AEC6E0D00189DE0 /* Interests */,
-				B59833BE1AE7278100809D03 /* SkillsViewController.swift */,
+				B5E608631BA8760000685B5E /* Skills */,
 				B554C9A11AED279F0040129C /* Background */,
 				B59833CA1AE72B2900809D03 /* Orientation Navigation Controllers */,
 				B549E89C1AE5C2E400946B5F /* Main.storyboard */,
@@ -165,6 +165,14 @@
 				B5CE8FD41AEC64A700189DE0 /* Haiku.pdf */,
 			);
 			name = Interests;
+			sourceTree = "<group>";
+		};
+		B5E608631BA8760000685B5E /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				B59833BE1AE7278100809D03 /* SkillsViewController.swift */,
+			);
+			name = Skills;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
