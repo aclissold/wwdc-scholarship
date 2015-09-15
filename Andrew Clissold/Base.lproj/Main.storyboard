@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +20,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLb-2j-Lyo">
-                                <rect key="frame" x="16" y="54" width="568" height="141"/>
+                                <rect key="frame" x="16" y="54" width="568" height="140.5"/>
+                                <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="My number one skill is my ability to learn. This complements my ">
                                         <attributes>
@@ -64,10 +67,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tk7-l4-X46">
-                                <rect key="frame" x="54" y="203" width="546" height="33"/>
+                                <rect key="frame" x="56" y="203" width="544" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNG-YB-Mrr">
-                                        <rect key="frame" x="0.0" y="0.0" width="4318" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="4317.5" height="32.5"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -81,6 +85,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="JoH-zk-Hqz"/>
                                     <constraint firstAttribute="bottom" secondItem="FNG-YB-Mrr" secondAttribute="bottom" id="ZAW-hD-Eq2"/>
@@ -96,10 +101,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOH-Is-GBz">
-                                <rect key="frame" x="96" y="236" width="504" height="33"/>
+                                <rect key="frame" x="101" y="236" width="499" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-ed-TP6">
-                                        <rect key="frame" x="0.0" y="0.0" width="5034" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="5034" height="32.5"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -113,6 +119,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstItem="TUY-ed-TP6" firstAttribute="leading" secondItem="nOH-Is-GBz" secondAttribute="leading" id="4RN-ui-UDG"/>
                                     <constraint firstAttribute="trailing" secondItem="TUY-ed-TP6" secondAttribute="trailing" constant="-4085" id="Pqy-GO-xCM"/>
@@ -128,10 +135,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eO-TT-PdD">
-                                <rect key="frame" x="67" y="269" width="533" height="33"/>
+                                <rect key="frame" x="69" y="269" width="530.5" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYZ-4b-yRc">
-                                        <rect key="frame" x="0.0" y="0.0" width="4085" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="4085" height="32.5"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -145,6 +153,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="pYZ-4b-yRc" secondAttribute="trailing" constant="-4085" id="Di2-8m-THc"/>
                                     <constraint firstItem="pYZ-4b-yRc" firstAttribute="top" secondItem="8eO-TT-PdD" secondAttribute="top" id="Flv-uX-dpB"/>
@@ -160,10 +169,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9HM-dg-O6V">
-                                <rect key="frame" x="43" y="302" width="557" height="33"/>
+                                <rect key="frame" x="42" y="302" width="557.5" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnU-32-sfG">
-                                        <rect key="frame" x="0.0" y="0.0" width="5144" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="5143.5" height="32.5"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -177,6 +187,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="6XE-0V-Ttc"/>
                                     <constraint firstAttribute="bottom" secondItem="PnU-32-sfG" secondAttribute="bottom" id="QeD-CN-FHI"/>
@@ -192,10 +203,11 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 </variation>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kQT-Bp-fkW">
-                                <rect key="frame" x="53" y="335" width="547" height="33"/>
+                                <rect key="frame" x="53" y="335" width="546.5" height="33"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fo0-Uf-86P">
-                                        <rect key="frame" x="0.0" y="0.0" width="5051" height="33"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="5050.5" height="32.5"/>
+                                        <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <attributedString key="attributedText">
                                             <fragment>
@@ -209,6 +221,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Fo0-Uf-86P" secondAttribute="bottom" id="4YJ-ii-53m"/>
                                     <constraint firstAttribute="trailing" secondItem="Fo0-Uf-86P" secondAttribute="trailing" constant="-4085" id="6dk-Ry-IIz"/>
@@ -224,36 +237,42 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 </variation>
                             </scrollView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swift" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylX-Lt-AHz">
-                                <rect key="frame" x="16" y="211" width="30" height="17"/>
+                                <rect key="frame" x="16" y="211" width="32" height="17"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objective-C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uP3-Cx-MfE">
-                                <rect key="frame" x="16" y="244" width="72" height="17"/>
+                                <rect key="frame" x="16" y="244" width="77" height="17"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Python" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7N-yX-Qu7">
-                                <rect key="frame" x="16" y="277" width="43" height="17"/>
+                                <rect key="frame" x="16" y="277" width="45.5" height="17"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-vh-fLc">
-                                <rect key="frame" x="16" y="310" width="19" height="17"/>
+                                <rect key="frame" x="16" y="310" width="18.5" height="17"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Java" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyy-3k-hkG">
-                                <rect key="frame" x="16" y="343" width="29" height="17"/>
+                                <rect key="frame" x="16" y="343" width="29.5" height="17"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nOH-Is-GBz" firstAttribute="leading" secondItem="uP3-Cx-MfE" secondAttribute="trailing" constant="8" id="9Va-sJ-mXB"/>
@@ -320,14 +339,16 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAI-5N-y4u">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="EAI-5N-y4u" secondAttribute="bottom" id="1Xd-Yi-Ixv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="EAI-5N-y4u" secondAttribute="trailing" constant="-16" id="LwA-1b-Zxj"/>
-                            <constraint firstItem="EAI-5N-y4u" firstAttribute="leading" secondItem="52p-wx-nhg" secondAttribute="leadingMargin" constant="-16" id="sI0-3y-ibU"/>
+                            <constraint firstAttribute="bottom" secondItem="EAI-5N-y4u" secondAttribute="bottom" id="1Xd-Yi-Ixv"/>
+                            <constraint firstAttribute="trailing" secondItem="EAI-5N-y4u" secondAttribute="trailing" id="LwA-1b-Zxj"/>
+                            <constraint firstItem="EAI-5N-y4u" firstAttribute="leading" secondItem="52p-wx-nhg" secondAttribute="leading" id="sI0-3y-ibU"/>
                             <constraint firstItem="EAI-5N-y4u" firstAttribute="top" secondItem="UzS-zK-ffQ" secondAttribute="bottom" id="x39-pN-BLk"/>
                         </constraints>
                     </view>
@@ -353,6 +374,7 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tve-DA-i8i">
                                 <rect key="frame" x="216" y="559" width="131" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="“Brass Quartet?”">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -362,7 +384,8 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6k-QZ-DHe">
-                                <rect key="frame" x="16" y="559" width="61" height="33"/>
+                                <rect key="frame" x="20" y="559" width="61" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="“Grave”">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -372,7 +395,8 @@ In addition to being a power user of tools like Xcode, Sketch, and Vim (I also <
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-O3-h5T">
-                                <rect key="frame" x="16" y="64" width="568" height="171"/>
+                                <rect key="frame" x="20" y="64" width="560" height="171"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="171" id="5LX-0i-m4f"/>
@@ -384,7 +408,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5B1-tG-xmQ">
-                                <rect key="frame" x="85" y="561" width="30" height="30"/>
+                                <rect key="frame" x="89" y="561" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" image="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -394,6 +419,7 @@ And this creative essence permeates everything I do—when I’m not a developer
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbV-lA-ND7">
                                 <rect key="frame" x="355" y="561" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" image="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -402,7 +428,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiW-UV-tR7">
-                                <rect key="frame" x="554" y="561" width="30" height="30"/>
+                                <rect key="frame" x="550" y="561" width="30" height="30"/>
+                                <animations/>
                                 <state key="normal" image="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -411,7 +438,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPg-4t-HZB">
-                                <rect key="frame" x="487" y="559" width="59" height="33"/>
+                                <rect key="frame" x="482" y="559" width="60" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="“Haiku”">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -421,6 +449,7 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PiW-UV-tR7" firstAttribute="trailing" secondItem="5oX-kA-Rmd" secondAttribute="trailingMargin" id="75N-SS-EbZ"/>
@@ -467,14 +496,16 @@ And this creative essence permeates everything I do—when I’m not a developer
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFA-ub-YUs">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="608"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zK-vW-fGF">
                                 <rect key="frame" x="185" y="185" width="230" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-DE-O2S">
-                                        <rect key="frame" x="15" y="91" width="201" height="48"/>
+                                        <rect key="frame" x="15" y="91" width="200" height="48"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
                                         <state key="normal" title="Andrew Clissold">
                                             <color key="titleColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -485,7 +516,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4T-Vq-1cL">
-                                        <rect key="frame" x="31" y="153" width="169" height="30"/>
+                                        <rect key="frame" x="22.5" y="153" width="184" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                         <state key="normal" title="andrewclissold@gmail.com">
                                             <color key="titleColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -496,7 +528,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dix-gr-d1r">
-                                        <rect key="frame" x="51" y="46" width="129" height="30"/>
+                                        <rect key="frame" x="45" y="46" width="140" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                         <state key="normal" title="github.com/aclissold">
                                             <color key="titleColor" red="0.66666666669999997" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -507,6 +540,7 @@ And this creative essence permeates everything I do—when I’m not a developer
                                         </connections>
                                     </button>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="230" id="0HD-kw-iRD"/>
@@ -521,6 +555,7 @@ And this creative essence permeates everything I do—when I’m not a developer
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-TV-cmP">
                                 <rect key="frame" x="269" y="559" width="63" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Projects">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -531,7 +566,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPm-0b-pzU">
-                                <rect key="frame" x="490" y="284" width="94" height="33"/>
+                                <rect key="frame" x="488" y="284" width="92" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Background">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -542,7 +578,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvH-DH-KPk">
-                                <rect key="frame" x="16" y="284" width="66" height="33"/>
+                                <rect key="frame" x="20" y="284" width="67" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Interests">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -553,7 +590,8 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XG-jd-UI1">
-                                <rect key="frame" x="280" y="28" width="41" height="33"/>
+                                <rect key="frame" x="280" y="28" width="40" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Skills">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -564,19 +602,20 @@ And this creative essence permeates everything I do—when I’m not a developer
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CFA-ub-YUs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="3cj-Z8-spR"/>
+                            <constraint firstItem="CFA-ub-YUs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3cj-Z8-spR"/>
                             <constraint firstItem="5XG-jd-UI1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="7m6-Zi-OyT"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CFA-ub-YUs" secondAttribute="bottom" id="EC1-Jq-VyA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CFA-ub-YUs" secondAttribute="bottomMargin" id="EC1-Jq-VyA"/>
                             <constraint firstAttribute="centerY" secondItem="wPm-0b-pzU" secondAttribute="centerY" id="FaG-lh-lRJ"/>
                             <constraint firstAttribute="centerY" secondItem="mvH-DH-KPk" secondAttribute="centerY" id="FzB-pe-9Jp"/>
                             <constraint firstAttribute="centerX" secondItem="UD4-TV-cmP" secondAttribute="centerX" id="KyE-HY-f0M"/>
                             <constraint firstAttribute="centerX" secondItem="2zK-vW-fGF" secondAttribute="centerX" id="U6x-ch-5Zx"/>
-                            <constraint firstItem="CFA-ub-YUs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Zig-Lp-f05"/>
+                            <constraint firstItem="CFA-ub-YUs" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Zig-Lp-f05"/>
                             <constraint firstAttribute="centerX" secondItem="5XG-jd-UI1" secondAttribute="centerX" id="fNn-21-amA"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UD4-TV-cmP" secondAttribute="bottom" constant="8" id="gKV-m4-SEg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="CFA-ub-YUs" secondAttribute="trailing" constant="-16" id="hof-Kw-A3a"/>
+                            <constraint firstAttribute="trailing" secondItem="CFA-ub-YUs" secondAttribute="trailing" id="hof-Kw-A3a"/>
                             <constraint firstItem="wPm-0b-pzU" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="iJN-QX-ekv"/>
                             <constraint firstItem="mvH-DH-KPk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="pPW-cG-cWO"/>
                             <constraint firstAttribute="centerY" secondItem="2zK-vW-fGF" secondAttribute="centerY" id="x7b-3g-uEN"/>
@@ -612,9 +651,11 @@ And this creative essence permeates everything I do—when I’m not a developer
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spam Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GNI-fT-sOU">
                                 <rect key="frame" x="125" y="44" width="350" height="145"/>
+                                <animations/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cou-wL-pWH">
                                 <rect key="frame" x="16" y="197" width="568" height="358"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="spam is an exploratory Swift package manager, enabling the use of ">
@@ -898,6 +939,7 @@ Cg
                             </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-Xh-R05">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="TLm-Qn-9uS"/>
                                     <barButtonItem title="View on GitHub" id="jin-gH-mwn">
@@ -909,6 +951,7 @@ Cg
                                 </items>
                             </toolbar>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="RTF-Xh-R05" secondAttribute="trailing" constant="-16" id="2vJ-MZ-JQG"/>
@@ -951,6 +994,7 @@ Cg
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YB1-HG-cGx">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xBn-nx-ZY6"/>
                                     <barButtonItem tag="1" title="View in App Store" id="zA9-5t-jrX">
@@ -966,11 +1010,13 @@ Cg
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Oakland Post" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ig1-xp-GtZ">
                                         <rect key="frame" x="232" y="10" width="137" height="24"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="0.45098039220000002" green="0.58039215690000001" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="F7k-Ht-FJV"/>
@@ -980,6 +1026,7 @@ Cg
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-SC-ZVZ">
                                 <rect key="frame" x="16" y="96" width="568" height="459"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="The Oakland Post is Oakland University’s independent school newspaper, and they commissioned me to write ">
@@ -1031,6 +1078,7 @@ And, something amazing happened—I submitted my GitHub repo to Hacker News and 
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zoc-zD-jGB" firstAttribute="top" secondItem="nnA-BA-lxo" secondAttribute="bottom" id="1cG-eE-eIv"/>
@@ -1080,6 +1128,7 @@ And, something amazing happened—I submitted my GitHub repo to Hacker News and 
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6Q-wY-2On">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="bkz-Gg-T7k"/>
                                     <barButtonItem tag="2" title="View on GitHub" id="lPS-Fg-Ivf">
@@ -1092,6 +1141,7 @@ And, something amazing happened—I submitted my GitHub repo to Hacker News and 
                             </toolbar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDo-Zb-yLT">
                                 <rect key="frame" x="16" y="341" width="568" height="214"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="TypeOneTwo is a diabetic tracking &amp; analysis app created by me and two other team members at MHacks IV in Ann Arbor, Michigan.">
@@ -1129,14 +1179,17 @@ Not only did we write the only Swift app at the hackathon, but we placed in the 
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TypeOneTwo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tka-Xv-KiB">
                                 <rect key="frame" x="227" y="64" width="146" height="33"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
                                 <color key="textColor" red="0.086274509803921567" green="0.69019607843137254" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TypeOneTwo Graph" translatesAutoresizingMaskIntoConstraints="NO" id="1dm-oT-FKe">
                                 <rect key="frame" x="140" y="105" width="320" height="228"/>
+                                <animations/>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="F6Q-wY-2On" secondAttribute="trailing" id="9m6-1d-Dov"/>
@@ -1189,6 +1242,7 @@ Not only did we write the only Swift app at the hackathon, but we placed in the 
                     <view key="view" contentMode="scaleToFill" id="YMl-L3-2V9">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8FE-Zk-5tf"/>
@@ -1218,27 +1272,30 @@ Not only did we write the only Swift app at the hackathon, but we placed in the 
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oakland University" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6P-ev-FsS">
-                                <rect key="frame" x="16" y="281" width="246" height="39"/>
+                                <rect key="frame" x="16" y="281" width="247.5" height="38.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9W-ZO-bAw">
-                                <rect key="frame" x="278" y="34" width="306" height="521"/>
+                                <rect key="frame" x="279.5" y="34" width="304.5" height="521"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
+                                <string key="text">
 Oakland University is a doctoral, research-intensive university located in Oakland County, Michigan.
 
 I experienced tremendous growth while I was there—I started out as a music major, and completely shifted worlds to that of computer science, and will be graduating this Fall.
 
 I had a blast taking music composition lessons, was blown away by the amount of ingenuity and history there are behind famous algorithms, and have been excited by the many possibilities machine learning holds.
 
-My favorite achievement was placing in the top ten at MHacks IV, landing my picture on the front page of OU’s website for a while and becoming #oufamous 😄👍</mutableString>
+My favorite achievement was placing in the top ten at MHacks IV, landing my picture on the front page of OU’s website for a while and becoming #oufamous 😄👍</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1n-fl-7Xn">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="3xE-67-lBN"/>
                                     <barButtonItem tag="3" title="Visit oakland.edu" id="Use-TG-hjY">
@@ -1250,6 +1307,7 @@ My favorite achievement was placing in the top ten at MHacks IV, landing my pict
                                 </items>
                             </toolbar>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="H1n-fl-7Xn" secondAttribute="trailing" id="1Pj-4e-esj"/>
@@ -1294,27 +1352,30 @@ My favorite achievement was placing in the top ten at MHacks IV, landing my pict
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IBM Design" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmD-VS-7em">
-                                <rect key="frame" x="16" y="281" width="153" height="39"/>
+                                <rect key="frame" x="16" y="281" width="150.5" height="38.5"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qP-yN-I47">
-                                <rect key="frame" x="185" y="34" width="399" height="521"/>
+                                <rect key="frame" x="182.5" y="34" width="401.5" height="521"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">
+                                <string key="text">
 As a part of the Maelstrom Solstice 2015 design internship program at IBM’s design studio in Austin, Texas, I was entrusted with creating entirely new experiences—from research to implementation—all the while spearheading IBM’s transition to user-centric, mobile-first design thinking.
 
 It was an eye-opening experience to once again be thrusted into an entirely new world, this time that of design. Being completely surrounded by hundreds of the most intelligent people I’ve ever met really gave me a tremendous opportunity to grow.
 
 I worked on a team with four other interns—a design researcher, a UX designer, a UI designer, and another front-end developer—and was given full control over the paths we took and the solutions we came up with.
 
-I have no doubt that my experience in Maelstrom has changed my life completely.</mutableString>
+I have no doubt that my experience in Maelstrom has changed my life completely.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivh-rz-IKl">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="MPf-nc-0sH"/>
                                     <barButtonItem tag="4" title="Visit ibm.com/design" id="S75-eL-yab">
@@ -1326,6 +1387,7 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                                 </items>
                             </toolbar>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ivh-rz-IKl" firstAttribute="top" secondItem="9qP-yN-I47" secondAttribute="bottom" constant="1" id="7m5-di-9W6"/>
@@ -1355,6 +1417,7 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lhs-aR-mOD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1378,6 +1441,7 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                     <view key="view" contentMode="scaleToFill" id="HVu-rg-tY7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yCO-e9-HK3"/>
@@ -1394,6 +1458,7 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eSw-4t-yco">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1414,6 +1479,7 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ovI-LD-zFJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1434,6 +1500,7 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="MM8-m8-Yel">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1460,12 +1527,14 @@ I have no doubt that my experience in Maelstrom has changed my life completely.<
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domino’s" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-p1-5zC">
                                 <rect key="frame" x="16" y="281" width="124" height="39"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRK-H7-pQ7">
                                 <rect key="frame" x="156" y="34" width="428" height="521"/>
+                                <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">
 An internship with Domino’s is my current endeavor, and I haven’t even been writing this chapter of my life for a month yet!
@@ -1480,6 +1549,7 @@ I finally achieved my goal of the past couple years—to be an iOS developer wit
                             </textView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2YL-Da-oRc">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="euY-cf-Zoc"/>
                                     <barButtonItem tag="5" title="View in App Store" id="ptW-VL-59I">
@@ -1491,6 +1561,7 @@ I finally achieved my goal of the past couple years—to be an iOS developer wit
                                 </items>
                             </toolbar>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2YL-Da-oRc" firstAttribute="leading" secondItem="XOW-Kj-o6U" secondAttribute="leadingMargin" constant="-16" id="17a-3b-EHz"/>
