@@ -30,21 +30,12 @@ class MainViewController: UIViewController {
     let motionQueue = NSOperationQueue()
 
     var isContactInfoShowing = false
-    var didCheckForSimulator = false
     var didUpdateContactInfoContainerViewCornerRadius = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         startDeviceMotionUpdates()
         setUpAudioSession()
-    }
-
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        if !didCheckForSimulator {
-            checkForSimulator()
-            didCheckForSimulator = true
-        }
     }
 
     override func viewDidLayoutSubviews() {
@@ -84,19 +75,6 @@ class MainViewController: UIViewController {
         } catch _ {
         }
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
-    }
-
-    func checkForSimulator() {
-        if !motionManager.deviceMotionAvailable {
-            let title = "Note"
-            let message = "This app is not intended to be run in the simulator—it makes " +
-                "use of device motion and the experience of holding a physical device."
-            let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-            let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
-            alert.addAction(action)
-            presentViewController(alert, animated: true, completion: nil)
-            return
-        }
     }
 
     func rotateFrames() {
