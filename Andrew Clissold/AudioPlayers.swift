@@ -32,12 +32,20 @@ class AudioPlayers: NSObject, AVAudioPlayerDelegate {
         let brassQuartetPath = NSBundle.mainBundle().pathForResource("Brass Quartet?", ofType: "mp3")!
         let haikuPath = NSBundle.mainBundle().pathForResource("Haiku", ofType: "mp4")!
 
-        let graveURL = NSURL(fileURLWithPath: gravePath)!
-        let brassQuartetURL = NSURL(fileURLWithPath: brassQuartetPath)!
-        let haikuURL = NSURL(fileURLWithPath: haikuPath)!
+        let graveURL = NSURL(fileURLWithPath: gravePath)
+        let brassQuartetURL = NSURL(fileURLWithPath: brassQuartetPath)
+        let haikuURL = NSURL(fileURLWithPath: haikuPath)
 
-        gravePlayer = AVAudioPlayer(contentsOfURL: graveURL, fileTypeHint: AVFileTypeMPEGLayer3, error: nil)
-        brassQuartetPlayer = AVAudioPlayer(contentsOfURL: brassQuartetURL, fileTypeHint: AVFileTypeMPEGLayer3, error: nil)
+        do {
+            gravePlayer = try AVAudioPlayer(contentsOfURL: graveURL, fileTypeHint: AVFileTypeMPEGLayer3)
+        } catch _ {
+            gravePlayer = nil
+        }
+        do {
+            brassQuartetPlayer = try AVAudioPlayer(contentsOfURL: brassQuartetURL, fileTypeHint: AVFileTypeMPEGLayer3)
+        } catch _ {
+            brassQuartetPlayer = nil
+        }
         haikuPlayer = HaikuPlayerViewController(contentURL: haikuURL)
 
         MPRemoteCommandCenter.sharedCommandCenter().playCommand.addTargetWithHandler { (event) -> MPRemoteCommandHandlerStatus in

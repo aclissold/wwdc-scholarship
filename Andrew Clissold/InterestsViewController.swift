@@ -11,7 +11,7 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-class InterestsViewController: UIViewController  {
+class InterestsViewController: UIViewController, AVAudioPlayerDelegate  {
 
     @IBOutlet var pieceButtons: [UIButton]!
 
@@ -19,8 +19,8 @@ class InterestsViewController: UIViewController  {
     @IBOutlet weak var brassQuartetPlayPauseButton: UIButton!
     @IBOutlet weak var haikuPlayPauseButton: UIButton!
 
-    func audioPlayerEndInterruption(player: AVAudioPlayer!, withOptions flags: Int) {
-        if UInt(flags) == AVAudioSessionInterruptionOptions.OptionShouldResume.rawValue  {
+    func audioPlayerEndInterruption(player: AVAudioPlayer, withOptions flags: Int) {
+        if UInt(flags) == AVAudioSessionInterruptionOptions.ShouldResume.rawValue  {
             player.play()
         }
     }
@@ -56,8 +56,8 @@ class InterestsViewController: UIViewController  {
         return true
     }
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.LandscapeRight.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .LandscapeRight
     }
 
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {

@@ -24,7 +24,7 @@ class SkillsViewController: UIViewController {
     }
 
     func setUpHorizontalScrollViews() {
-        for i in 0..<count(scrollViews) {
+        for i in 0..<scrollViews.count {
             let textWidth = (textViews[i].text! as NSString).boundingRectWithSize(textViews[i].frame.size,
                 options: .UsesLineFragmentOrigin,
                 attributes: [NSFontAttributeName: UIFont(name: "Menlo", size: 14)!],

@@ -24,9 +24,9 @@ class BackgroundViewController: UIViewController {
     }
 
     func setUpPageViewController() {
-        dataSource.oaklandUniversityViewController = storyboard!.instantiateViewControllerWithIdentifier("OaklandUniversityViewController") as! UIViewController
-        dataSource.IBMDesignViewController = storyboard!.instantiateViewControllerWithIdentifier("IBMDesignViewController") as! UIViewController
-        dataSource.dominosViewController = storyboard!.instantiateViewControllerWithIdentifier("DominosViewController") as! UIViewController
+        dataSource.oaklandUniversityViewController = storyboard!.instantiateViewControllerWithIdentifier("OaklandUniversityViewController") as UIViewController
+        dataSource.IBMDesignViewController = storyboard!.instantiateViewControllerWithIdentifier("IBMDesignViewController") as UIViewController
+        dataSource.dominosViewController = storyboard!.instantiateViewControllerWithIdentifier("DominosViewController") as UIViewController
 
         pageViewController = storyboard!.instantiateViewControllerWithIdentifier("BackgroundPageViewController") as! UIPageViewController
         pageViewController.setViewControllers([dataSource.initialViewController], direction: .Forward, animated: true, completion: nil)

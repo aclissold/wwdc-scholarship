@@ -10,8 +10,8 @@ import UIKit
 
 class PortraitUpsideDownNavigationController: UINavigationController {
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.PortraitUpsideDown.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .PortraitUpsideDown
     }
 
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {

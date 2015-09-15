@@ -10,8 +10,8 @@ import UIKit
 
 class LandscapeLeftNavigationController: UINavigationController {
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.LandscapeLeft.rawValue)
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return .LandscapeLeft
     }
 
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
